@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+  <html>
+	  <head>
+		  <title> Projecte Final </title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" type="text/css" href="CSS/hombre.css">
+      <link rel="stylesheet" type="text/css" href="CSS/principal.css">
+      <link rel="shortcut icon" href="blue.png">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+      <script src="JS/jquery-3.2.1.js"></script>
+      <script src="JS/moviment.js"></script>
+      <script src="JS/slider.js"></script>
+      <script src="JS/filtreCataleg.js"></script>
+	  </head>
+    
+    <body>
+      <div class="head">
+        <nav>
+          <ul>
+            <li><a href="condiciones.html">Condiciones</a></li>
+            <li><a href="contacto.html">Contacta con nosotros</a></li>
+            <li><a href="contacto.html">Iniciar sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="body"><br>
+        <img src="blue.png">
+        <h1>BlueMeth<br></h1>
+        <input type="submit" title="Buscar" id="boto" value="Buscar">
+        <input id="hol" type="search" placeholder="Buscar en BlueMeth..." />
+        <h1>No.1 EN ROPA URBANA</h1>
+      </div>
+
+      <div class="fix">
+        <div class="principal">
+          <ul class="nav">
+            <li><a href="" id="rebajas">REBAJAS</a></li>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Hombre</a></li>
+            <li><a href="">Mujer</a></li>
+            <li><a href="">Niño</a></li>
+            <li><a href="">Calzado</a></li>
+            <li><a href="">Accesorios</a></li>
+            <li style="margin-left: 270px;"><a href=""><svg class="responsiveAccountHeader_accountIcon" width="24px" height="24px" viewBox="0 0 24 24"><path d="M12,10.5 C13.6568542,10.5 15,9.15685425 15,7.5 C15,5.84314575 13.6568542,4.5 12,4.5 C10.3431458,4.5 9,5.84314575 9,7.5 C9,9.15685425 10.3431458,10.5 12,10.5 Z M12,12.5 C9.23857625,12.5 7,10.2614237 7,7.5 C7,4.73857625 9.23857625,2.5 12,2.5 C14.7614237,2.5 17,4.73857625 17,7.5 C17,10.2614237 14.7614237,12.5 12,12.5 Z M5,21.5 L3,21.5 C3,17.6340068 7.02943725,14.5 12,14.5 C16.9705627,14.5 21,17.6340068 21,21.5 L19,21.5 C19,18.8641562 15.9603707,16.5 12,16.5 C8.03962935,16.5 5,18.8641562 5,21.5 Z"/></svg></a></li>
+            <li><a href="cesta.html"><svg width="24px" height="24px" viewBox="0 0 24 24"><path d="M16 7a1 1 0 0 1-1-1V3H9v3a1 1 0 0 1-2 0V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1z"></path><path d="M20 5H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2zm0 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h16z"></path></svg></li></a>
+          </ul>
+        </div>
+
+        <div class="principal2">
+          <p class="barra" id="barra">OFERTAS BLACK FRIDAY</p>
+          <p class="barra" id="barra1" >ULTIMAS NOVEDADES A MEJOR PRECIO</p>
+          <p class="barra" id="barra2" >ENVIOS EN 24H GRATIS DURANTE ESTA SEMANA</p>  
+        </div>
+        
+        <div class="inicio">
+          <button onclick="tornarAdalt()">Volver al inicio</button>
+
+        <script>
+          function tornarAdalt() {
+            var body = $("html, body");
+            body.stop().animate({
+              scrollTop:0
+            }, 500, 'swing', function() { 
+              document.documentElement.scrollTop = 0;
+            })
+          }
+          </script>
+        </div>
+      </div>
+
+        <div class="container"><br>
+          <a id="volver" href="file:///C:/Users/didac/Documents/1r%20DAM/LDM/UF3/JS/Projecte/cataleg.html">&#10094;<span>Volver</span></a>
+          <h1>NIÑO</h1><br>
+
+          <div class="mySlides fade">
+              <img src="images/niño/slider/niño1.webp">
+          </div>
+            
+          <div class="mySlides fade" class="amagar">
+            <img src="images/niño/slider/niño2.webp">
+          </div>
+
+          <div class="mySlides fade" class="amagar">
+            <img src="images/niño/slider/niño3.webp">
+          </div>
+              
+          <div class="mySlides fade" class="amagar">
+            <img src="images/niño/slider/niño4.webp">
+          </div>
+            
+          <button class="next" href="oferta.html">VER OFERTAS</button>
+
+          <div>
+            <a class="prev" id="nexta" >&#10094;</a>
+            <a class="next"id="next" >&#10095;</a>
+          </div>
+        </div>
+
+          <div class="container2">
+            <h1>Categorías</h1>
+              <div id="tabla-precios">
+
+          <div class="apchica">
+            <div class="precio-col-features">
+              <img src="niñaropa.png">
+            </div>
+          <div class="precio-col-header">
+            <h3>ROPA</h3>
+          </div></div>
+          
+          <div class="apdior">
+            <div class="precio-col-features">
+              <img src="dior1.jpg">
+            </div>
+          <div class="precio-col-header">
+            <h3>CALZADO</h3>
+          </div></div>
+          
+          <div class="aphol">
+            <div class="precio-col-features1">
+              <img src="niñoacces.png">
+            </div>
+          <div class="precio-col-header">
+            <h3>ACCESORIOS</h3>
+          </div></div> </div> </div> 
+
+          <div class="container5">
+            <h1>NOVEDADES</h1>
+            <table style="margin: 0 auto;">
+              <tr>
+                <td id="">
+                  <img src="images/niño/calzado/calzado1.jpg" onmouseover="this.src='images/niño/calzado/calzado1.1.webp';" onmouseout="this.src='images/niño/calzado/calzado1.jpg';" id='imatge' >
+                  <p>70€</p>
+                  <h4 id="h4">Heelys x Reebok Girls' Low</h4>
+                </td>
+  
+                <td id="">
+                  <img src="images/niño/calzado/calzado2.jpg" onmouseover="this.src='images/niño/calzado/calzado2.2.jpg';" onmouseout="this.src='images/niño/calzado/calzado2.jpg';" id='imatge' >
+                  <p>60€</p>
+                  <h4 id="h4">Nike Revolution 6 Children</h4>
+                </td>
+  
+                <td id="">
+                  <img src="images/niño/calzado/calzado3.jpg" onmouseover="this.src='images/niño/calzado/calzado3.3.jpg';" onmouseout="this.src='images/niño/calzado/calzado3.jpg';" id='imatge' >
+                  <p>100€</p>
+                  <h4 id="h4">Asics GEL-Quantum 180 Junior</h4>
+                </td>
+  
+                <td id="">
+                  <img src="images/niño/calzado/calzado4.jpg" onmouseover="this.src='images/niño/calzado/calzado4.4.jpg';" onmouseout="this.src='images/niño/calzado/calzado4.jpg';" id='imatge' >
+                  <p>150€</p>
+                  <h4 id="h4">Nike Air Huarache Junior</h4>
+                </td>
+  
+                <td id="">
+                  <img src="images/niño/calzado/calzado5.jpg" onmouseover="this.src='images/niño/calzado/calzado5.5.jpg';" onmouseout="this.src='images/niño/calzado/calzado5.jpg';" id='imatge' >
+                  <p>200€</p>
+                  <h4 id="h4">Emporio Armani EA7 B&W</h4>
+                </td>
+                </tr>
+            </table>
+          </div>
+          
+          <div class="container6">
+            <table style=padding-left:60px>
+              <tr>
+                <td>
+                  <img src="niño1.png">
+                  <h2><a href="file:///C:/Users/didac/Documents/2n%20SMX/SINTESI/contact.html">Camisetas
+                    <svg width="17px" height="14px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g>
+                        <polygon class="arrow" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                        <polygon class="arrow-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                        <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                      </g>
+                    </svg>
+                  </h2></a> 
+                </td>
+                <td>
+                  <img src="niño2.png">
+                  <h2><a href="file:///C:/Users/didac/Documents/2n%20SMX/SINTESI/contact.html">Conjuntos de chandal
+                    <svg width="17px" height="14px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g>
+                        <polygon class="arrow" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                        <polygon class="arrow-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                        <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+                      </g>
+                    </svg>
+                  </h2></a>
+                </td>
+              </tr>
+            </table>
+              </div>
+              <div class="info">
+                <img id="logo" src="blue.png">
+                <h6>© COPYRIGTH 2021 ALL FITNESS · Todos los derechos reservados</h6>
+                <p id="contact">Si tiene alguna duda, contacte con nosotros<br><a href="file:///C:/Users/didac/Documents/2n%20SMX/SINTESI/contacto.html">Página de contacto</a></p>
+                <p id="pago">Aceptamos las siguientes formas de pago</p>
+                <img id="visa" src="pago.png">
+              </div>

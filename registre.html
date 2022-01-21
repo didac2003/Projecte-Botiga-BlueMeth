@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resgistre Usuari</title>
+    <link rel="stylesheet" href="CSS/registre.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+/*
+User ID user_yFccRr1DIDofvVZMQn0KF
+Access Token 532a4cfff3560265a5d8d599bbf0044e
+
+*/
+
+
+</script>
+
+  </head>
+  <body>
+    <div class="container">
+      <form id="contact" method="post">
+        <h3>....estas a punt de realitzar la teva compra!</h3>
+        <h4>Ingresa les dades seguents per validar el teu correu i completar el registre!</h4>
+        <fieldset>
+          <input
+            placeholder="Nom i Cognoms"
+            type="text"
+            
+            tabindex="1"
+            required
+            autofocus
+            class="usuari"
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="correu electronic"
+            type="email"
+            
+            tabindex="2"
+            required
+            class="correu"
+          />
+        </fieldset>
+        <fieldset>
+          <textarea
+            placeholder="....alguna sugerencia per millorar? Comenta aqui>:"
+            tabindex="5"
+            required
+            class="message"
+   
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <button
+            name="validar"
+            type="submit"
+            id="contact-submit"
+            data-submit="...Sending"
+            class="submit"
+          >
+            Validar correu!
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- loader -->
+    <div class="loader">
+      <img
+        src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif"
+        alt=""
+      />
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+   
+    <script type="text/javascript">
+      // User ID
+      // user_yFccRr1DIDofvVZMQn0KF
+
+      // Access Token
+      // 532a4cfff3560265a5d8d599bbf0044e
+
+
+      (function () {
+        // emailjs.init("USERID");
+        emailjs.init("user_yFccRr1DIDofvVZMQn0KF");
+      })();
+</script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+ <script src="JS/registre.js"></script>
+
+
+</html>
