@@ -1,0 +1,74 @@
+.shoppingCartItem  > div {
+  display: inline-block;
+  width: 33%;
+}
+
+.amplada > div{ 
+  display: inline-block;
+  width: 33%;
+}
+
+.shoppingCartItemsContainer{
+  margin-bottom: 100px;
+  margin-top: -50px;
+}
+
+.preu {
+  text-align: left;
+  height: 200px;
+}
+
+.preu p {
+  display: inline-block;
+}
+
+.total {
+  margin-left: 10%;
+}
+
+.carrito hr {
+  margin: 20px 0 20px 120px;
+  width: 80%;
+}
+
+.cantidad {
+  position: relative;
+  right: 250px;
+}
+
+.rallaCantidad {
+  position: relative;
+  right: 190px;
+}
+
+.rallaPrecio {
+  width: 10px;
+}
+
+.shoppingCartItem  img {
+  width: 140px;
+  height: 140px;
+}
+
+#preu {
+  position: relative;
+  bottom: 70px;
+}
+
+.sumaCantitat {
+  position: relative;
+  width: 6%;
+  bottom: 71px;
+  right: 250px;
+}
+
+.boto {
+  position: relative;
+  bottom: 80px;
+  right: 40px;
+  padding: 15px;
+  background-color: red;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}

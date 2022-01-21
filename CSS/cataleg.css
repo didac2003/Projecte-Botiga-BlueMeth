@@ -1,0 +1,328 @@
+/*SLIDER*/
+
+.container{
+  height: 700px;
+  margin-top: -39.7px;
+}
+
+.mySlides{
+display:none;
+}
+
+.mySlides img {
+ width: 100%;
+}
+
+#verOfert {
+  top: 120%;
+  right: 6%;
+  border: 0;
+  border-radius: 0;
+  color: black;
+  width: 200px;
+}
+
+#verOfert:hover{
+  color: white;
+}
+
+.prev, .next{
+  cursor:pointer;
+  position:absolute;
+  top:80%;
+  width:auto;
+  margin-top:-22px;
+  padding:16px;
+  color:black;
+  font-weight:bold;
+  font-size:18px;
+  transition:0.6s ease;
+  border-radius:0 3px 3px 0;
+}
+
+.prev{
+left:0;
+border-radius:3px 0 0 3px;
+}
+
+.next{
+right:0;
+border-radius:3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+background-color:rgba(0,0,0,0.8);
+color: white;
+}
+
+form input {
+  position: relative;
+  height: 10px;
+  bottom: 40px;
+  cursor: pointer;
+}
+
+.fade{
+-webkit-animation-name:fade;
+-webkit-animation-duration:0.5s;
+animation-name:fade;
+animation-duration:0.5s;
+}
+
+@-webkit-keyframes fade{
+from{opacity:.4}
+to{opacity:1}
+}
+
+@keyframes fade{
+from{opacity:.4}
+to{opacity:1}
+}
+
+/*Categorias*/
+
+.container2{
+  height: 570px;
+  margin-top: -60px;
+}
+
+.imagen{
+  width: 110%;
+  height: 500px;
+}
+
+.categoriaPrincipal {
+  display:inline-block;
+  width:26%;
+  height: 500px;
+  cursor:pointer;
+  margin-right: 45px;
+}
+ 
+.categoriaTitol{
+  position: relative;
+  bottom: 250px;
+  text-shadow: 1px 1px 2px #000000;
+  letter-spacing: -1px;
+  color:white;
+  font-size: 20px;
+  transform:scaleY(2.5);
+  font-weight: bolder;
+}
+
+.categoriaFrases {
+  background-color: white;
+  height:40px;
+  width: 93%;
+  margin: 10px 0 0 15px;
+  position: relative;
+  bottom: 200px;
+}
+
+.categoriaFrases h3{
+ color:#f3f3f3;
+ text-align:center;
+ font-size:14px;
+ font-family: 'Nunito', sans-serif;
+ color: black;
+ padding: 10px 0 10px 0;
+ font-weight: 500;
+}
+
+.categoriaFrases:hover{
+  background-color:rgba(0,0,0,0.8);
+  transition:0.6s ease;
+  }
+
+.categoriaFrases h3:hover{
+  color: white;
+}
+
+.container3 {
+  height: 700px;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.container3 h1 {
+  margin-bottom: 10px;
+}
+
+.container3 img {
+  margin-left: 10px;
+  height: 280px;
+  width: 280px;
+}
+
+#todo {
+  float: right;
+  position: relative;
+  right: 80px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+#todo:hover {
+  text-decoration: underline;
+  -webkit-animation-name:fade;
+  -webkit-animation-duration:10s;
+}
+
+.ofertas {
+  padding-top: 13px;
+  display: inline-block;
+  width: 23%;
+}
+
+.ofertas:hover {
+  cursor: pointer;
+  -webkit-animation-name:fade;
+  -webkit-animation-duration:10s;
+}
+
+.container4 {
+  text-align: left;
+  height: 480px;
+  margin-left: 5%;
+}
+
+.container4 img {
+  margin: 10px 0 0 10px;
+  height: 280px;
+  width: 280px;
+}
+
+.ofert {
+  position: relative;
+  left: 40px;
+  border: 1px red solid;
+  cursor: pointer;
+  padding: 15px;
+  margin-left: 10px;
+  color: gray;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.nomPreu {
+  padding-top: 13px;
+  display: inline-block;
+  width: 23%;
+  transition: all .3s;
+}
+
+.antes {
+  position: relative;
+  left: 12px;
+  text-decoration: line-through;
+}
+
+.money {
+  position: relative;
+  left: 120px;
+  bottom: 18.6px;
+  color: red;
+  text-decoration: none;
+}
+
+.ahora {
+  position: relative;
+  right: 20px;
+  font-weight: normal;
+  top: 9px;
+}
+
+.active {
+  background-color: red;
+  color: white;
+  transition:0.8s ease;
+}
+
+.container5{
+  height: 580px;
+}
+
+.slider{
+  display:none;
+  }
+
+.slider img {
+   width: 90%;
+}
+
+#primera {
+  width: 80%;
+}
+
+.container5 button {
+  cursor: pointer;
+  position: relative;
+  left: 400px;
+  bottom: 130px;
+  border: 0;
+  border-radius: 0;
+  width: 200px;
+  height: 50px;
+  transition:0.6s ease;
+}
+
+.container5 button:hover{
+  color: white;
+}
+  
+.enderrere, .endavant{
+  cursor:pointer;
+  position: absolute;
+  color:black;
+  font-size:16px;
+  margin-top: 255px;
+  transition:0.6s ease;
+  padding: 15px;
+}
+  
+.enderrere{
+  left:80px;
+}
+  
+.endavant{
+  right: 80px;
+}
+  
+.enderrere:hover, .endavant:hover, .container5 button:hover{
+  background-color:rgba(0,0,0,0.8);
+  color: white;
+}
+
+.botoSlider {
+  bottom: 80px;
+}
+
+.container6 {
+  height: 650px;
+}
+
+.container6 img {
+  margin: 0 10px 0 10px;
+  width: 44%;
+}
+
+.container6 a{
+  text-decoration: none;
+  color: black;
+}
+
+.container6 p {
+  text-align: left;
+  margin: 18px 0 0 5.4%;
+  font-size: 18px;
+}
+
+.container6 span {
+  float: right;
+  margin-right: 36%;
+}
+
+.container6 a:hover, .container6 span:hover {
+  text-decoration: underline;
+}
