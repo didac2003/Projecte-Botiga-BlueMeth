@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+  <html>
+	  <head>
+		  <title> Projecte Final </title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width. initial-scale=1">
+		  <link rel="stylesheet" type="text/css" href="CSS/cesta.css">
+      <link rel="stylesheet" type="text/css" href="CSS/principal.css">
+      <link rel="shortcut icon" href="blue.png">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+      <script src="JS/jquery-3.2.1.js"></script>
+	    <script src="JS/filtre.js"></script>
+      <script src="JS/moviment.js"></script>
+	  </head>
+
+    <body>
+      <div class="body"><br>
+        <img src="blue.png">
+        <h1>BlueMeth<br></h1>
+        <input type="submit" title="Buscar" id="boto" value="Buscar">
+        <input id="hol" type="search" placeholder="Buscar en BlueMeth..." />
+        <h1>No.1 EN ROPA URBANA</h1>
+      </div>
+
+        <div class="fix">
+          <div class="principal">
+            <ul class="nav">
+              <li><a href="">Inicio</a></li>
+              <li><a href="">Catálogo</a>
+                <ul>
+                  <li><a href="">Ropa</a>
+                    <ul>
+                      <li><a href="">Hombre</a></li>
+                      <li><a href="">Mujer</a></li>
+                      <li><a href="">Niño</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Calzado</a>
+                    <ul>
+                      <li><a href="">Hombre</a></li>
+                      <li><a href="">Mujer</a></li>
+                      <li><a href="">Niño</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Accesorios</a></li>
+                </ul>
+              </li>
+              <li><a href="">Cesta</a></li>
+              <li><a href="">Registro</a></li>
+              <li><a href="">Condiciones</a></li>
+              <li><a href="">Contacto</a></li>
+            </ul>
+          </div>
+        
+           <div class="principal2">
+            <p class="barra" id="barra">OFERTAS BLACK FRIDAY</p>
+            <p class="barra" id="barra1" >ULTIMAS NOVEDADES A MEJOR PRECIO</p>
+            <p class="barra" id="barra2" >ENVIOS EN 24H GRATIS DURANTE ESTA SEMANA</p>  
+          </div>
+        </div>
+        <h3 id="hombre">Mujer - Ropa (65)</h3>
+        <div class = "categoriaLista">
+          <hr id="ralla">
+          <b><br><br><p>Marca</p></b><br>
+          <input type="checkbox" class="category_item botoFiltre" category="adidas"><p class="titols">Adidas</p>
+          <input type="checkbox" class="category_item botoFiltre" category="nike"><p class="titols">Nike</p>
+          <input type="checkbox" class="category_item botoFiltre" category="puma"><p class="titols">Puma</p>
+          <hr>
+          <b><br><br><p>Talla</p></b><br>
+          <input type="checkbox" class="category_item botoFiltre" category="xsmall"><p class="titols">XS</p>
+          <input type="checkbox" class="category_item botoFiltre" category="small"><p class="titols">S</p>
+          <input type="checkbox" class="category_item botoFiltre" category="mid"><p class="titols">M</p>
+          <input type="checkbox" class="category_item botoFiltre" category="large"><p class="titols">L</p>
+          <input type="checkbox" class="category_item botoFiltre" category="xlarge"><p class="titols">XL</p>
+          <hr>
+          <b><br><br><p>Tipo</p></b><br>
+          <input type="checkbox" class="category_item botoFiltre" category="conjunto"><p class="titols">Conjuntos</p>
+          <input type="checkbox" class="category_item botoFiltre" category="sudadera"><p class="titols">Sudaderas</p>
+          <input type="checkbox" class="category_item botoFiltre" category="chaqueta"><p class="titols">Chaquetas</p>
+          <input type="checkbox" class="category_item botoFiltre" category="camiseta"><p class="titols">Camisetas</p>
+          <input type="checkbox" class="category_item botoFiltre" category="pantalon"><p class="titols">Pantalones</p>
+          
+        </div>
+
+        <div class="container">
+            <h1>Ropa de hombre | Estilo deportivo, urbano y streetwear</h1>
+        </div>
+
+        <div class="container2">
+          <div class="container2_1">
+            <button class="category_item botoFiltre" category="sudadera">CHAQUETAS NIKE</button>
+            <button class="category_item botoFiltre" category="xlarge">TOP VENTAS ADIDAS</button>
+            <button class="category_item botoFiltre" category="small">TODO SOBRE NIKE</button><br>
+            <button class="category_item botoFiltre" category="camiseta">LAS CAMISETAS MÁS COOL</button>
+            <button class="category_item botoFiltre" category="conjunto">CONJUNTOS MCKENZIE</button>
+            <button class="category_item botoFiltre" category="pantalon">TUS PANTALONES FAVORITOS AQUÍ</button><br>
+            <button class="category_item botoFiltre" category="chaqueta">COLECCIÓN HOMBRE</button>
+            <button class="category_item botoFiltre" category="large">LAS MEJORES CHAQUETAS</button>
+            <button class="category_item botoFiltre" category="xsmall">TOP VENTAS HOMBRE</button>
+          </div>
+        </div>
+
+        <section class="products-list">
+          
+            <div class="productItem item" category="adidas">
+              <img class="imageMujer" src="images/mujer/ropa/marcas/adidas1.jpg" onmouseover="this.src='images/mujer/ropa/marcas/adidas1.1.jpg';" onmouseout="this.src='images/mujer/ropa/marcas/adidas1.jpg';">
+              <a href="#" class="titleMujer">adidas chándal Tiro</a>
+              <p class="preuMujer">35.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="adidas">
+            <img class="imageMujer" src="images/mujer/ropa/marcas/adidas2.jpg" onmouseover="this.src='images/mujer/ropa/marcas/adidas2.2.jpg';" onmouseout="this.src='images/mujer/ropa/marcas/adidas2.jpg';">
+            <a href="#" class="titleMujer">adidas Essential Joggers</a>
+            <p class="preuMujer">70.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="adidas">
+            <img class="imageMujer" src="images/mujer/ropa/marcas/adidas3.jpg" onmouseover="this.src='images/mujer/ropa/marcas/adidas3.3.jpg';" onmouseout="this.src='images/mujer/ropa/marcas/adidas3.jpg';">
+            <a href="#" class="titleMujer">adidas Shine Tape Tights</a>
+            <p class="preuMujer">75.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+
+          
+          <div class="productItem item" category="nike">
+            <img class="imageMujer" src="images/mujer/ropa/marcas/nike1.jpg" onmouseover="this.src='images/mujer/ropa/marcas/nike1.1.jpg';" onmouseout="this.src='images/mujer/ropa/marcas/nike1.jpg';">
+            <a href="#" class="titleMujer">Nike sudadera con capucha Essential Oversized</a>
+            <p class="preuMujer">65.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="nike">
+            <img class="imageMujer" src="images/mujer/ropa/marcas/nike2.jpg" onmouseover="this.src='images/mujer/ropa/marcas/nike2.2.jpg';" onmouseout="this.src='images/mujer/ropa/marcas/nike2.jpg';">
+            <a href="#" class="titleMujer">Nike chaqueta Tape</a>
+            <p class="preuMujer">40.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="nike">
+            <img class="imageMujer" src="images/mujer/ropa/marcas/nike3.jpg" onmouseover="this.src='images/mujer/ropa/marcas/nike3.3.jpg';" onmouseout="this.src='images/mujer/ropa/marcas/nike3.jpg';">
+            <a href="#" class="titleMujer">Nike Utility Therma-FIT Hoodie</a>
+            <p class="preuMujer">85.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+
+          
+          <div class="productItem item" category="puma">
+            <img class="imageMujer" src="images/mujer/ropa/marcas/puma1.jpg" onmouseover="this.src='images/mujer/ropa/marcas/puma1.1.jpg';" onmouseout="this.src='images/mujer/ropa/marcas/puma1.jpg';">
+            <a href="#" class="titleMujer">Puma sudadera Varsity Turtleneck</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="puma">
+            <img class="imageMujer" src="images/mujer/ropa/marcas/puma2.jpg" onmouseover="this.src='images/mujer/ropa/marcas/puma2.2.jpg';" onmouseout="this.src='images/mujer/ropa/marcas/puma2.jpg';">
+            <a href="#" class="titleMujer">Puma camiseta crop de manga larga evoKNIT Seamless</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="productItem item" category="puma">
+            <img class="imageMujer" src="images/mujer/ropa/marcas/puma3.jpg" onmouseover="this.src='images/mujer/ropa/marcas/puma3.3.jpg';" onmouseout="this.src='images/mujer/ropa/marcas/puma3.jpg';">
+            <a href="#" class="titleMujer">Puma mallas evoKnit</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+                </div>
+          
+          
+          <div class="productItem item" category="xsmall">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/xs1.jpg" onmouseover="this.src='images/mujer/ropa/tallas/xs1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/xs1.jpg';">
+            <a href="#" class="titleMujer">Puma chándal Core Panel</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="xsmall">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/xs2.jpg" onmouseover="this.src='images/mujer/ropa/tallas/xs2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/xs2.jpg';">
+            <a href="#" class="titleMujer">Nike sudadera con capucha Sportswear Essential</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+
+          <div class="productItem item" category="xsmall">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/xs3.jpg" onmouseover="this.src='images/mujer/ropa/tallas/xs3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/xs3.jpg';">
+            <a href="#" class="titleMujer">Nike sudadera con capucha Sportswear Essential</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+          </div>
+
+          
+          <div class="productItem item" category="small">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/s1.jpg" onmouseover="this.src='images/mujer/ropa/tallas/s1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/s1.jpg';">
+            <a href="#" class="titleMujer">Nike leggings High Waisted Single Swoosh</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="small">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/s2.jpg" onmouseover="this.src='images/mujer/ropa/tallas/s2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/s2.jpg';">
+            <a href="#" class="titleMujer">Nike sudadera Essential</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="productItem item" category="small">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/s3.jpg" onmouseover="this.src='images/mujer/ropa/tallas/s3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/s3.jpg';">
+            <a href="#" class="titleMujer">Nike Colour Block Swoosh Hoodie</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+          </div>
+
+          
+          <div class="productItem item" category="mid">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/m1.jpg" onmouseover="this.src='images/mujer/ropa/tallas/m1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/m1.jpg';">
+            <a href="#" class="titleMujer">Nike Trend Overhead Hoodie</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="mid">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/m2.jpg" onmouseover="this.src='images/mujer/ropa/tallas/m2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/m2.jpg';">
+            <a href="#" class="titleMujer">adidas Originals sudadera con capucha 3-Stripes Linear</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="productItem item" category="mid">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/m3.jpg" onmouseover="this.src='images/mujer/ropa/tallas/m3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/m3.jpg';">
+            <a href="#" class="titleMujer">Nike pantalón de chándal Essential Futura</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+          </div>
+
+          
+          <div class="productItem item" category="large">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/l1.webp" onmouseover="this.src='images/mujer/ropa/tallas/l1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/l1.webp';">
+            <a href="#" class="titleMujer">Nike pantalón de chándal Swoosh</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="large">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/l2.jpg" onmouseover="this.src='images/mujer/ropa/tallas/l2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/l2.jpg';">
+            <a href="#" class="titleMujer">Emporio Armani EA7 chándal EA7 Logo</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="productItem item" category="large">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/l3.jpg" onmouseover="this.src='images/mujer/ropa/tallas/l3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/l3.jpg';">
+            <a href="#" class="titleMujer">SikSilk Poly Logo Track Pants</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+          </div>
+
+          
+          <div class="productItem item" category="xlarge">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/xl1.jpg" onmouseover="this.src='images/mujer/ropa/tallas/xl1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/xl1.jpg';">
+            <a href="#" class="titleMujer">Columbia chaqueta Puffect</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="xlarge">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/xl2.jpg" onmouseover="this.src='images/mujer/ropa/tallas/xl2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/xl2.jpg';">
+            <a href="#" class="titleMujer">adidas Originals leggings 3-Stripes Linear</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="productItem item" category="xlarge">
+            <img class="imageMujer" src="images/mujer/ropa/tallas/xl3.jpg" onmouseover="this.src='images/mujer/ropa/tallas/xl3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tallas/xl3.jpg';">
+            <a href="#" class="titleMujer">adidas Originals leggings 3-Stripes Linear</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+                </div>n>>
+          </div>
+
+          
+          <div class="productItem item" category="conjunto">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/conj1.jpg" onmouseover="this.src='images/mujer/ropa/tipus/conj1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/conj1.jpg';">
+            <a href="#" class="titleMujer">Emporio Armani EA7 chándal EA7 Logo</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="conjunto">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/conj2.jpg" onmouseover="this.src='images/mujer/ropa/tipus/conj2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/conj2.jpg';">
+            <a href="#" class="titleMujer">adidas Originals chaqueta SS</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+
+          <div class="productItem item" category="conjunto">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/conj3.jpg" onmouseover="this.src='images/mujer/ropa/tipus/conj3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/conj3.jpg';">
+            <a href="#" class="titleMujer">Emporio Armani EA7 chándal Logo Zip</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</butto>
+          </div>
+
+          
+          <div class="productItem item" category="sudadera">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/suda1.jpg" onmouseover="this.src='images/mujer/ropa/tipus/suda1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/suda1.jpg';">
+            <a href="#" class="titleMujer">Nike sudadera Essential</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="sudadera">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/suda2.jpg" onmouseover="this.src='images/mujer/ropa/tipus/suda2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/suda2.jpg';">
+            <a href="#" class="titleMujer">adidas Originals 3-Stripes Oversized Crew Sweatshirt</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+
+          <div class="productItem item" category="sudadera">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/suda3.jpg" onmouseover="this.src='images/mujer/ropa/tipus/suda3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/suda3.jpg';">
+            <a href="#" class="titleMujer">Nike sudadera Essential Futura</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+                </div>n>>
+          </div>
+
+          
+          <div class="productItem item" category="chaqueta">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/cha1.jpg" onmouseover="this.src='images/mujer/ropa/tipus/cha1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/cha1.jpg';">
+            <a href="#" class="titleMujer">The North Face Dome Logo Puffa Jacket</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="chaqueta">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/cha2.jpg" onmouseover="this.src='images/mujer/ropa/tipus/cha2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/cha2.jpg';">
+            <a href="#" class="titleMujer">SikSilk chaqueta Fur Padded</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+
+          </div>
+          <div class="productItem item" category="chaqueta">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/cha3.jpg" onmouseover="this.src='images/mujer/ropa/tipus/cha3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/cha3.jpg';">
+            <a href="#" class="titleMujer">Nike Parka Core Swoosh</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+               
+          </div>
+
+          
+          <div class="productItem item" category="camiseta">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/cami1.jpg" onmouseover="this.src='images/mujer/ropa/tipus/cami1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/cami1.jpg';">
+            <a href="#" class="titleMujer">Nike camiseta Essential Logo Boyfriend</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="camiseta">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/cami2.jpg" onmouseover="this.src='images/mujer/ropa/tipus/cami2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/cami2.jpg';">
+            <a href="#" class="titleMujer">adidas Originals 3-Stripes California T-Shirt</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="productItem item" category="camiseta">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/cami3.jpg" onmouseover="this.src='images/mujer/ropa/tipus/cami3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/cami3.jpg';">
+            <a href="#" class="titleMujer">adidas Originals Bold Oversized Crew Sweatshirt</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+          </div>
+
+          
+          <div class="productItem item" category="pantalon">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/pant1.jpg" onmouseover="this.src='images/mujer/ropa/tipus/pant1.1.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/pant1.jpg';">
+            <a href="#" class="titleMujer">Nike Colour Block Swoosh Joggers</a>
+            <p class="preuMujer">50.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          
+          <div class="productItem item" category="pantalon">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/pant2.jpg" onmouseover="this.src='images/mujer/ropa/tipus/pant2.2.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/pant2.jpg';">
+            <a href="#" class="titleMujer">SikSilk Poly Logo Track Pants</a>
+            <p class="preuMujer">25.00€</p>
+            <button class="addToCart">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="productItem item" category="pantalon">
+            <img class="imageMujer" src="images/mujer/ropa/tipus/pant3.jpg" onmouseover="this.src='images/mujer/ropa/tipus/pant3.3.jpg';" onmouseout="this.src='images/mujer/ropa/tipus/cami3.jpg';">
+            <a href="#" class="titleMujer">JUICY COUTURE pantalón de chándal Diamante Velour</a>
+            <p class="preuMujer">120.00€</p>
+              <button class="addToCart">Añadir al carrito</button>
+          </div>
+        </section>  
+      </div>
+
+      <div style="margin-top: 70px;" class="info">
+        <img class="imageMujer" id="logo" src="blue.png">
+        <h6>© COPYRIGTH 2021 BLUEMETH · Todos los derechos reservados</h6>
+        <p id="contact">Si tiene alguna duda. contacte con nosotros<br><a href="file:///C:/Users/didac/Documents/2n%20SMX/SINTESI/contacto.html">Página de contacto</a></p>
+        <p id="pago">Aceptamos las siguientes formas de pago</p>
+        <img class="imageMujer" id="visa" src="pago.png">
+      </div>
+      <script src="JS/carrito/cestaMujer.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+  <html>
+	  <head>
+		  <title> Projecte Final </title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="CSS/principal.css">
+      <link rel="stylesheet" type="text/css" href="CSS/carrito.css">
+      <link rel="shortcut icon" href="blue.png">
+      <script src="JS/jquery-3.2.1.js"></script>
+      <script src="JS/moviment.js"></script>
+	  </head>
+
+
+      <body>
+        <div class="body"><br>
+          <img src="blue.png">
+          <h1>BlueMeth<br></h1>
+          <input type="submit" title="Buscar" id="boto" value="Buscar">
+          <input id="hol" type="search" placeholder="Buscar en BlueMeth..." />
+          <h1>No.1 EN ROPA URBANA</h1>
+        </div>
+        <div class="fix">
+          <div class="principal">
+            <ul class="nav">
+              <li><a href="" id="rebajas">REBAJAS</a></li>
+              <li><a href="">Inicio</a></li>
+              <li><a href="">Catálogo</a>
+                <ul>
+                  <li><a href="">Ropa</a>
+                    <ul>
+                      <li><a href="">Hombre</a></li>
+                      <li><a href="">Mujer</a></li>
+                      <li><a href="">Niño</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Calzado</a>
+                    <ul>
+                      <li><a href="">Hombre</a></li>
+                      <li><a href="">Mujer</a></li>
+                      <li><a href="">Niño</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Accesorios</a></li>
+                </ul>
+              </li>
+              <li><a href="">Cesta</a></li>
+              <li><a href="">Registro</a></li>
+              <li><a href="">Condiciones</a></li>
+              <li><a href="">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="principal2">
+            <p class="barra" id="barra">OFERTAS BLACK FRIDAY</p>
+            <p class="barra" id="barra1" >ULTIMAS NOVEDADES A MEJOR PRECIO</p>
+            <p class="barra" id="barra2" >ENVIOS EN 24H GRATIS DURANTE ESTA SEMANA</p>
+          </div>
+
+          <div class="inicio">
+            <button onclick="tornarAdalt()">Volver al inicio</button>
+
+            <script>
+              function tornarAdalt() {
+                var body = $("html, body");
+                body.stop().animate({
+                  scrollTop:0
+                }, 500, 'swing', function() {
+                    document.documentElement.scrollTop = 0;
+                    })
+              }
+            </script>
+          </div>
+        </div>
+
+          <div class="carrito">
+
+            <h1>CARRITO</h1>
+            <hr>
+            <div class="amplada">
+            <div>
+              <h4 class="producto">Producto</h4>
+              <hr>
+            </div>
+            <div>
+              <h4 class="precio">Precio</h4>
+              <hr class="rallaPrecio" style="width: 25%; position: relative; left: 70px;">
+            </div>
+            <div>
+              <h4 class="cantidad">Cantidad</h4>
+              <hr class="rallaCantidad">
+            </div>
+          </div>
+      </div>
+
+          <div class="shoppingCartItemsContainer">
+
+          </div>
+
+          <div class="preu">
+            <p class="total">Total:</p>
+            <p class="shoppingCartTotal">0€</p>
+          </div>
+          <script src="JS/carrito/carrito.js"></script>
+          <script src="JS/carrito/cestaHombre.js"></script>
+          <script src="JS/carrito/cestaMujer.js"></script>
+          <script src="JS/carrito/cestaCalzado.js"></script>
+            </div>

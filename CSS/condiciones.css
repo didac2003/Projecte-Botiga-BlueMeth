@@ -1,0 +1,71 @@
+.links {
+    text-align: left;
+    padding: 10px;
+}
+
+.links a {
+    font-weight: normal;
+    margin-left: 30px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.links span {
+    margin-left: 8px;
+    margin-right: -21px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.infoIzq {
+    float: left;
+    width: 20%;
+    text-align: left;
+    padding: 20px 0 0 20px;
+}
+
+.infoIzq p {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.infoIzq p:hover {
+    text-decoration: underline;
+}
+
+.infoIzq hr {
+    margin: 15px 0 15px 0;
+    width: 85%;
+}
+
+#ayuda {
+    font-size: 15px;
+}
+
+#ayuda:hover {
+    text-decoration: none;
+}
+
+.container {
+    font-weight: normal;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.container h1 {
+    margin-top: 30px;
+}
+
+.container p {
+    line-height: 18px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.adalt p {
+    line-height: 30px;
+}
