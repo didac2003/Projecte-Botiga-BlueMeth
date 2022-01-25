@@ -37,21 +37,19 @@ body {
 }
 
 .body {
-    color: white;
-    background-color: black;
-    height: 130px;
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+  color: white;
+  background-color: black;
+  height: 130px;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
 }
 
 .body > img{
 	float:left;
 	height: 90px;
 	width: 300px;
-	margin-left: 30px;
-  border: 2px solid red;
-  margin-right: 20px;
+  margin: 10px 20px 0 30px;
 }
 
 .fix{
@@ -146,6 +144,50 @@ svg {
   display: inline-block;
   font-size: 14px;
   padding-top: 15px;
+}
+
+.links {
+  position: relative;
+  text-align: left;
+  padding: 10px;
+  bottom: 30px;
+  margin-left: 30px; 
+  height: 20px;
+  
+}
+
+.links hr {
+  position: absolute;
+  left: -25px;
+  top: 55px;
+  width: 100%;
+}
+
+.links a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;  
+  font-weight: normal;
+}
+
+.links p {
+  font-weight: normal;
+}
+
+.links span {
+  margin-left: 8px;
+  margin-right: -21px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+#link {
+  position: relative;
+  left: 120px;
+  bottom: 19px;
 }
 
 .footer1 {
@@ -302,7 +344,6 @@ svg {
 	width: 250px;
 	margin-left: 30px;
   margin-top: 15px;
-  border: 2px solid red
 }
 
 #visa{
