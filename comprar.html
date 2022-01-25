@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+  <html>
+	  <head>
+		<title> Projecte Final </title>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="CSS/principal.css">
+        <link rel="stylesheet" type="text/css" href="CSS/comprar.css">
+        <link rel="shortcut icon" href="blue.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+        <script src="JS/jquery-3.2.1.js"></script>
+        <script src="JS/moviment.js"></script>
+        <script src="JS/slider.js"></script>
+        <script src="JS/filtreCataleg.js"></script>
+	  </head>
+    
+    <body>
+      <div class="head">
+        <nav>
+          <ul>
+            <li><a href="condiciones.html">Condiciones</a></li>
+            <li><a href="contacto.html">Contacta con nosotros</a></li>
+            <li><a href="iniciSessio.html">Iniciar sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="body"><br>
+        <img src="blue.png">
+        <h1>BlueMeth<br></h1>
+        <input type="submit" title="Buscar" id="boto" value="Buscar">
+        <input id="hol" type="search" placeholder="Buscar en BlueMeth..." />
+        <h1>No.1 EN ROPA URBANA</h1>
+      </div>
+
+      <div class="fix">
+        <div class="principal">
+          <ul class="nav">
+            <li><a href="oferta.html" id="rebajas">REBAJAS</a></li>
+            <li><a href="cataleg.html">Inicio</a></li>
+            <li><a href="hombre.html">Hombre</a></li>
+            <li><a href="mujer.html">Mujer</a></li>
+            <li><a href="niño.html">Niño</a></li>
+            <li><a href="calzado.html">Calzado</a></li>
+            <li><a href="accesorios.html">Accesorios</a></li>
+            <li style="margin-left: 270px;"><a href="iniciSessio.html"><svg class="responsiveAccountHeader_accountIcon" width="24px" height="24px" viewBox="0 0 24 24"><path d="M12,10.5 C13.6568542,10.5 15,9.15685425 15,7.5 C15,5.84314575 13.6568542,4.5 12,4.5 C10.3431458,4.5 9,5.84314575 9,7.5 C9,9.15685425 10.3431458,10.5 12,10.5 Z M12,12.5 C9.23857625,12.5 7,10.2614237 7,7.5 C7,4.73857625 9.23857625,2.5 12,2.5 C14.7614237,2.5 17,4.73857625 17,7.5 C17,10.2614237 14.7614237,12.5 12,12.5 Z M5,21.5 L3,21.5 C3,17.6340068 7.02943725,14.5 12,14.5 C16.9705627,14.5 21,17.6340068 21,21.5 L19,21.5 C19,18.8641562 15.9603707,16.5 12,16.5 C8.03962935,16.5 5,18.8641562 5,21.5 Z"/></svg></a></li>
+            <li><a href="cesta.html"><svg width="24px" height="24px" viewBox="0 0 24 24"><path d="M16 7a1 1 0 0 1-1-1V3H9v3a1 1 0 0 1-2 0V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1z"></path><path d="M20 5H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2zm0 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h16z"></path></svg></li></a>
+          </ul>
+        </div>
+
+        <div class="principal2">
+          <p class="barra" id="barra">OFERTAS BLACK FRIDAY</p>
+          <p class="barra" id="barra1" >ULTIMAS NOVEDADES A MEJOR PRECIO</p>
+          <p class="barra" id="barra2" >ENVIOS EN 24H GRATIS DURANTE ESTA SEMANA</p>  
+        </div>
+        
+        <div class="inicio">
+          <button onclick="tornarAdalt()">Volver al inicio</button>
+
+        <script>
+          function tornarAdalt() {
+            var body = $("html, body");
+            body.stop().animate({
+              scrollTop:0
+            }, 500, 'swing', function() { 
+              document.documentElement.scrollTop = 0;
+            })
+          }
+          </script>
+        </div>
+      </div>
+
+        <div class="comprar">
+            <form> <br><br>
+                <h3>Formulario de atención al cliente</h3>
+                <label>Nombre completo <span>*</span></label> <input type="text" id="input" required>
+                <label>Dirección e-mail <span>*</span></label> <input type="email" placeholder="porejemplo@ejemplo.com" id="input" required>
+                <label>Asunto <span>*</span></label> <input type="text" id="input" required>
+                <label>Descripción <span>*</span></label> <input type="text" id="input" style="height: 100px;" required>
+                <label>Número de pedido</label> <input type="text" pattern="[0-9]" id="input" >
+                <label>Número de producto</label> <input type="text" pattern="[0-9]" id="input" >
+                <input id="enviar" type="submit" value="Comprar">
+            </form>
+        </div>
+
+      <div class="footer1">
+        <div class="ampladaMaxima">
+          <div class="social">
+            <h3>Únete a la conversación</h3>
+            <ul>
+              <li>
+                <a>
+                  <svg viewBox="0 0 200 200">
+                    <path d="M116.829,200H79.154V100H54.021V65.536l25.133-.009-0.037-20.3C79.117,17.108,86.775,0,120.068,0h27.723V34.469H130.469c-12.966,0-13.591,4.816-13.591,13.806l-0.049,17.252h31.158l-3.669,34.46L116.853,100Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <svg viewBox="0 0 200 200">
+                    <path class="cls-1" d="M82.342,1.214H71.18L63.646,30.576,55.812,1.214H44.2c2.329,6.934,4.749,13.892,7.078,20.829C54.813,32.474,57.022,40.335,58.02,45.7V75.977H69.063V45.7L82.342,1.214M97.129,19.6A13.464,13.464,0,0,0,85.551,25.3c-2.118,2.82-3.118,7.171-3.118,13.128V57.936c0,5.926,1,10.316,3.118,13.1a13.482,13.482,0,0,0,11.578,5.705,13.512,13.512,0,0,0,11.619-5.705c2.089-2.789,3.088-7.178,3.088-13.1V38.431c0-5.957-1-10.308-3.088-13.128A13.494,13.494,0,0,0,97.129,19.6m51.515,0.665h-9.951V62.849c-2.2,3.162-4.292,4.73-6.284,4.73-1.335,0-2.118-.806-2.335-2.368a24.082,24.082,0,0,1-.12-3.93V20.262h-9.922V64.32a28.652,28.652,0,0,0,.884,8.288c0.987,2.814,3.2,4.138,6.409,4.138,3.629,0,7.4-2.233,11.368-6.848v6.079h9.951V20.262M97.129,67.579c-3.2,0-4.743-2.581-4.743-7.733V36.406c0-5.152,1.54-7.727,4.743-7.727s4.754,2.575,4.754,7.727V59.847c0,5.152-1.54,7.733-4.754,7.733M82.342,1.214h0M178.107,103.3a20.7,20.7,0,0,0-17.619-16.235c-20.214-2.294-40.667-2.3-61.031-2.294s-40.823,0-61.036,2.294A20.685,20.685,0,0,0,20.814,103.3c-2.846,12.53-2.876,26.188-2.876,39.078s0,26.561,2.84,39.079A20.676,20.676,0,0,0,38.385,197.7c20.213,2.289,40.667,2.3,61.036,2.289,20.363,0.012,40.823,0,61.036-2.289a20.689,20.689,0,0,0,17.614-16.24c2.84-12.518,2.858-26.189,2.858-39.079S180.941,115.832,178.107,103.3ZM64.429,114.568h-11.8v63.577H41.671V114.568H30.087V104.15H64.429v10.418Zm29.763,63.577H84.329v-6.012c-3.912,4.553-7.63,6.775-11.253,6.775-3.171,0-5.362-1.313-6.348-4.108a28.275,28.275,0,0,1-.867-8.19v-43.6h9.845v40.592a29.319,29.319,0,0,0,.1,3.882c0.235,1.55.987,2.331,2.3,2.331,1.98,0,4.043-1.544,6.228-4.675v-42.13h9.863v55.13ZM131.6,161.6c0,5.1-.331,8.77-0.987,11.108-1.317,4.107-3.953,6.2-7.877,6.2-3.5,0-6.884-1.978-10.176-6.11v5.347h-9.85V104.15h9.85v24.168c3.178-3.966,6.554-5.981,10.176-5.981,3.924,0,6.56,2.094,7.877,6.226,0.656,2.221.987,5.865,0.987,11.083V161.6Zm37.177-9.2h-19.7v9.772c0,5.1,1.649,7.647,5.031,7.647,2.419,0,3.839-1.33,4.4-4a65.055,65.055,0,0,0,.216-6.768h10.05v1.458c0,3.217-.12,5.433-0.211,6.439a14.491,14.491,0,0,1-2.3,5.988c-2.727,4-6.771,5.975-11.91,5.975-5.157,0-9.08-1.886-11.926-5.652-2.089-2.753-3.166-7.1-3.166-12.963V140.976c0-5.889.951-10.192,3.046-12.981a13.93,13.93,0,0,1,11.8-5.658A13.6,13.6,0,0,1,165.735,128c2.058,2.789,3.045,7.092,3.045,12.981V152.4Zm-51.306-21.068a7.057,7.057,0,0,0-4.911,2.423v33.611a6.984,6.984,0,0,0,4.911,2.453c2.84,0,4.284-2.453,4.284-7.434V138.859C121.758,133.885,120.314,131.333,117.474,131.333Zm36.551,0q-4.938,0-4.941,7.648v5.1h9.851v-5.1C158.935,133.885,157.286,131.333,154.025,131.333Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <svg viewBox="0 0 200 200">
+                    <path class="cls-1" d="M200,38.177a82.261,82.261,0,0,1-23.566,6.439,41.047,41.047,0,0,0,18.042-22.624,82.383,82.383,0,0,1-26.058,9.922A41.024,41.024,0,0,0,98.5,69.218,116.622,116.622,0,0,1,13.925,26.485a40.852,40.852,0,0,0,12.7,54.6A40.916,40.916,0,0,1,8.038,75.97c-0.006.171-.006,0.344-0.006,0.514a40.959,40.959,0,0,0,32.916,40.1,41.288,41.288,0,0,1-18.531.7,41.059,41.059,0,0,0,38.33,28.4A82.507,82.507,0,0,1,9.79,163.2,82.6,82.6,0,0,1,0,162.623,116.393,116.393,0,0,0,62.9,181c75.475,0,116.748-62.319,116.748-116.364q0-2.66-.119-5.289A83.177,83.177,0,0,0,200,38.177Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <svg viewBox="0 0 200 200">
+                    <path class="cls-1" d="M200,100a97.823,97.823,0,0,1-13.413,50.2A99.5,99.5,0,0,1,150.2,186.584,97.747,97.747,0,0,1,100,200a98.808,98.808,0,0,1-28.384-4.162q7.681-12.123,10.156-21.363,1.172-4.422,7.031-27.466,2.6,5.073,9.5,8.789a30.957,30.957,0,0,0,14.844,3.711,46.893,46.893,0,0,0,28.125-8.923q12.374-8.918,19.141-24.549t6.772-35.156a53.555,53.555,0,0,0-7.749-27.856Q151.695,50,136.978,41.8t-33.2-8.2a83.684,83.684,0,0,0-25.519,3.772A66.481,66.481,0,0,0,58.139,47.4,68.49,68.49,0,0,0,43.946,61.78a59.612,59.612,0,0,0-8.725,16.87,56.805,56.805,0,0,0-2.8,17.444q0,13.541,5.209,23.828a29.359,29.359,0,0,0,15.234,14.453q3.9,1.555,4.947-2.6c0.174-.611.522-1.953,1.041-4.041s0.87-3.381,1.044-3.906a5.953,5.953,0,0,0-1.434-5.6q-6.637-7.938-6.641-19.653A46.992,46.992,0,0,1,65.43,64.783q13.6-14.136,35.611-14.136,19.661,0,30.664,10.681t11,27.734q0,22.138-8.92,37.635t-22.851,15.491a15.932,15.932,0,0,1-12.76-5.664q-4.821-5.659-3-13.612,1.044-4.549,3.452-12.169t3.906-13.416a40.386,40.386,0,0,0,1.5-9.827,16.479,16.479,0,0,0-3.516-10.8q-3.516-4.3-10.028-4.3-8.07,0-13.672,7.422T71.225,98.3q0,9.513,3.253,15.894L61.588,168.616q-2.211,9.118-1.691,23.046a99.657,99.657,0,0,1-43.359-36.584A96.927,96.927,0,0,1,0,100,97.817,97.817,0,0,1,13.413,49.805,99.5,99.5,0,0,1,49.805,13.416,97.751,97.751,0,0,1,100,0a97.755,97.755,0,0,1,50.2,13.416,99.5,99.5,0,0,1,36.391,36.389A97.816,97.816,0,0,1,200,100Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer2">
+        <div class="colcol">
+          <div class="col">
+            <h4>TARJETAS REGALO</h4>
+            <img src="images/principal/cartaRegalo.png">
+            <p class="preu">5€ - 300€</p>
+            <p class="tarjeta">La tarjeta regalo física de BM es el regalo que estabas buscando. Canjeable en todas las tiendas BlueMeth España.</p>
+            <a href="" id="botoTargeta">COMPRAR TARJETAS REGALO</a>
+          </div>
+
+          <div class="col">
+            <h4>NUESTRAS TIENDAS</h4>
+            <img id="tienda" src="images/principal/descarga.jpg">
+            <p class="tiendas">Encuentra aquí tu tienda JD más cercana y sus horarios. Descubre las novedades más top de las mejores marcas</p>
+            <a href="" id="botoComprar">COMPRAR TARJETAS REGALO</a>
+          </div>
+
+          <div class="col">
+            <h4>RECOMIÉNDANOS</h4>
+            <img style="width: 62%;" src="images/principal/estrella.png">
+            <p class="comprar">Compra las 24 h los 365 días al año con la App de JD. Recibe información sobre las últimas novedades estés donde estés.</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="info">
+        <img id="logo" src="blue.png">
+        <h6>© COPYRIGTH 2021 BLUEMETH · Todos los derechos reservados</h6>
+        <p id="contact">Si tiene alguna duda, contacte con nosotros<br><a href="contacto.html">Página de contacto</a></p>
+        <p id="pago">Aceptamos las siguientes formas de pago</p>
+        <img id="visa" src="pago.png">
+      </div>
+    </body>
+  </html>
