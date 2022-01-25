@@ -1,25 +1,3 @@
-.links {
-    text-align: left;
-    padding: 10px;
-}
-
-.links a {
-    font-weight: normal;
-    margin-left: 30px;
-    font-size: 12px;
-    text-decoration: none;
-    color: black;
-}
-
-.links span {
-    margin-left: 8px;
-    margin-right: -21px;
-}
-
-.links a:hover {
-    text-decoration: underline;
-}
-
 .infoIzq {
     float: left;
     width: 20%;
