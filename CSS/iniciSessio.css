@@ -17,7 +17,7 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background-image: url(tiendaRoparrak.jpeg);
+  background-image: url(../images/tiendaRoparrak.jpeg);
   background-repeat: no-repeat;
   background-size:100%;
 }
@@ -159,6 +159,7 @@ fieldset {
     background: rgb(0, 0, 0);
     display:none;
 }
+
 a{
   text-decoration: none;
   color:#777;
