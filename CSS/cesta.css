@@ -145,3 +145,17 @@ hr{
   position: relative;
   bottom: 70px;
 }
+
+.addToCart {
+  background-color: #2C75B1;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.addToCart:hover {
+  background-color: #5BABEE;
+}
