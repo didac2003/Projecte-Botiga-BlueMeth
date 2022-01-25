@@ -49,7 +49,7 @@
         else {
           sendmail(nomPersona.value,correuPersona.value,randomNumero);
           setTimeout(paginaValida,4000);
-          success();
+          suuccess();
         } 
         
       });
@@ -102,7 +102,7 @@
         });
   }
 
-    function success() {
+    function suuccess() {
       Swal.fire({
         icon: "success",
         title: "Perfecte!...",
