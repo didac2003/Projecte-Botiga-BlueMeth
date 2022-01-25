@@ -1,5 +1,5 @@
 
-           
+
 
 /**
         emailjs.send("SERVICE ID", "TEMPLATE NAME", {
@@ -109,5 +109,8 @@
         text: "S'ha enviat un codi de  validació al teu correu!",
       });
     }
+    
+
+
     
 
