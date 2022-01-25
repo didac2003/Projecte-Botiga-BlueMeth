@@ -50,11 +50,15 @@
           sendmail(nomPersona.value,correuPersona.value,randomNumero);
           setTimeout(paginaValida,4000);
           suuccess();
+          
+
+
         } 
         
       });
     }
     validate();
+
 
     function sendmail(name, email, msg) {
       emailjs.send("service_v5g0guh", "template_eiuucf6", {
@@ -87,6 +91,8 @@
          }).then((response)=>{
            if(response==randomNumero){
              pinCorrecte();
+             setTimeout(obraInici,2000);
+
             }
            else{ 
              error();
@@ -109,8 +115,13 @@
         title: "Perfecte!...",
         text: "S'ha enviat un codi de  validació al teu correu!",
       });
+      
     }
     
+
+    function obraInici(){
+      window.location.href="iniciSessio.html"
+    }
 
 
     
