@@ -1,5 +1,3 @@
-
-  
 /**
         emailjs.send("SERVICE ID", "TEMPLATE NAME", {
           to_name: "USERNAME",
@@ -69,4 +67,5 @@
       });
     }
     
+
 
