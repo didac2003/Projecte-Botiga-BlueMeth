@@ -34,21 +34,23 @@
         console.log('Nom2;'+correu);
         if ( name == namee.value && email.value==correu && name!="") {
             success();
-            
+            setTimeout(obrirPagina,2200);
         } 
 
         
         else{
-         error();
+         erroor();
         }
       });
     }
     validar();
 
-    
+    function obrirPagina(){
+      window.location.href="comprar.html"
+    }
 
 
-    function error() {
+    function erroor() {
       Swal.fire({
         icon: "error",
         title: "Ostres...",

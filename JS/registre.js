@@ -90,6 +90,7 @@
             }
            else{ 
              error();
+             paginaValida();
             }
           })
     }
