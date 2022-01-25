@@ -32,10 +32,11 @@
         
         console.log('Nom2;'+name);
         console.log('Nom2;'+correu);
-        if (name == namee.value && email.value==correu) {
+        if ( name == namee.value && email.value==correu && name!="") {
             success();
             
-        }  
+        } 
+
         
         else{
          error();
