@@ -72,3 +72,19 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.submit{
+  border-radius: 3px;
+position: relative;
+bottom:47px;
+  padding: 20px;
+  border:0;
+  background-color: black;
+  color:white;
+  margin-left: 1000px;
+
+
+
+
+
+}

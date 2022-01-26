@@ -53,8 +53,8 @@
     function erroor() {
       Swal.fire({
         icon: "error",
-        title: "Ostres...",
-        text: "usuari o correu incorrectes!",
+        title: "Carai...",
+        text: "usuario o correo incorrectos!",
       });
     }
     
@@ -65,8 +65,8 @@
     function success() {
       Swal.fire({
         icon: "success",
-        title: "Perfecte!...",
-        text: "has iniciat sessio!",
+        title: "Perfecto!...",
+        text: "has iniciado sessión!",
       });
     }
     

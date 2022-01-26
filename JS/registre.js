@@ -71,22 +71,22 @@
     function emptyerror() {
       Swal.fire({
         icon: "error",
-        title: "Ostres...",
-        text: "Els camps no poden estar buids!",
+        title: "Carai...",
+        text: "Los campos no pueden estar vacios!",
       });
     }
 
     function error() {
       Swal.fire({
         icon: "error",
-        title: "Ostres...",
-        text: "Alguna cosa ha anat malament!",
+        title: "Carai...",
+        text: "Alguna cosa ha ido mal!",
       });
     }
     
     function paginaValida(){
      swal({
-          text: 'introdueix PIN de validacio del correu".',
+          text: 'introduzca PIN de validación del correo".',
           content: "input",
          }).then((response)=>{
            if(response==randomNumero){
@@ -105,15 +105,15 @@
     Swal.fire({
         icon: "success",
         title: "Oleee!...",
-        text: "Correu verificat, registre completat!",
+        text: "Correo verificado, registro completado!",
         });
   }
 
     function suuccess() {
       Swal.fire({
         icon: "success",
-        title: "Perfecte!...",
-        text: "S'ha enviat un codi de  validació al teu correu!",
+        title: "Perfecto!...",
+        text: "Se ha enviado un codigo de  verificación a su correo!",
       });
       
     }
