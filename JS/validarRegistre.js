@@ -1,10 +1,10 @@
-let btn = document.querySelector(".submit");
+let boto = document.querySelector(".submit");
 let namee = localStorage.getItem('nomPerson');
 let correu= localStorage.getItem('correuPerson')
 
 
-
-btn.addEventListener("click", (e) => {
+console.log(namee);
+boto.addEventListener("click", (e) => {
     
     if (namee== "" ) {
       alert("registrate antes de comprar!")
