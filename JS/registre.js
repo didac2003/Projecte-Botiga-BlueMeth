@@ -1,6 +1,3 @@
-
-
-
 /**
         emailjs.send("SERVICE ID", "TEMPLATE NAME", {
           to_name: "USERNAME",
@@ -60,13 +57,13 @@
     validate();
 
 
-    function sendmail(name, email, msg) {
-      emailjs.send("service_v5g0guh", "template_eiuucf6", {
-        to_name: name,
-        from_name: email,
-        message: msg,
-      });
-    }
+    // function sendmail(name, email, msg) {
+    //   emailjs.send("service_v5g0guh", "template_eiuucf6", {
+    //     to_name: name,
+    //     from_name: email,
+    //     message: msg,
+    //   });
+    // }
 
     function emptyerror() {
       Swal.fire({

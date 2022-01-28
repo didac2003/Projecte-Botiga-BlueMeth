@@ -27,6 +27,8 @@ window.onload = function addItemToShoppingCart(){
   const elementsTitleNiño = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitleNiño')
   const elementsTitleAccesorios = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitleAccesorios')
 
+  let items=0
+  localStorage.setItem('items', JSON.stringify(items));
   hol:
   for (i = 0; i < 100; i++){
     if (arrayImatge[i] != null) {
@@ -64,6 +66,8 @@ window.onload = function addItemToShoppingCart(){
       updateShoppingCartTotal()
 
       shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
+      items+= arrayTitol.length
+      actualitzarPreus()
     }
   }
 
@@ -102,6 +106,8 @@ window.onload = function addItemToShoppingCart(){
      updateShoppingCartTotal()
      shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem)
      shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
+     items+= arrayTitol1.length
+     actualitzarPreus()
      }
    }
 
@@ -140,6 +146,8 @@ window.onload = function addItemToShoppingCart(){
     updateShoppingCartTotal()
     shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem)
     shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
+    items+= arrayTitol2.length
+     actualitzarPreus()
     }
   }
 
@@ -180,6 +188,8 @@ window.onload = function addItemToShoppingCart(){
       updateShoppingCartTotal()
 
       shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
+      items+= arrayTitol3.length
+      actualitzarPreus()
     }
   }
 
@@ -220,11 +230,18 @@ window.onload = function addItemToShoppingCart(){
       updateShoppingCartTotal()
 
       shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
+      items+= arrayTitol4.length
+      actualitzarPreus()
     }
   }
-  let longitud = arrayImatge.length + arrayImatge1.length + arrayImatge2.length + arrayImatge3.length + arrayImatge4.length
-  let pipo = document.getElementById("itemsTotal")
-  pipo.innerHTML = longitud
+  // let longitud = arrayImatge.length + arrayImatge1.length + arrayImatge2.length + arrayImatge3.length + arrayImatge4.length
+  // let pipo = document.getElementById("itemsTotal")
+  // pipo.innerHTML = longitud
+ 
+  function actualitzarPreus(){
+    let pipo = document.getElementById("itemsTotal")
+    pipo.innerHTML = items
+  }
 
   function updateShoppingCartTotal (){
     let total = 0
@@ -246,7 +263,8 @@ window.onload = function addItemToShoppingCart(){
     const buttonClicked = e.target
     buttonClicked.closest('.shoppingCartItem').remove()
     updateShoppingCartTotal()
-    longitud = longitud - 1
+    items = items - 1
+    actualitzarPreus();
     pipo.innerHTML = longitud
   }
   

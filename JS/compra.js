@@ -229,7 +229,6 @@ function dividirPreu(){
 
 preuTotal.innerHTML = total + ",00€"
 
-
 arrayImatge = JSON.parse(localStorage.getItem('arrayImatge'));
 arrayTitol = JSON.parse(localStorage.getItem('arrayTitol'));
 arrayPreu = JSON.parse(localStorage.getItem('arrayPreu'));

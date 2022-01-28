@@ -355,12 +355,3 @@ input {
     font-weight: normal;
     font-size: 13px;
 }
-
-#itemsTotal {
-    position: relative;
-    top: 15px;
-    right: 32px;
-    font-size: 13.5px;
-    font-weight: normal;
-    color: white;
-}
