@@ -11,11 +11,21 @@ window.onload = function addItemToShoppingCart(){
   arrayPreu2 = JSON.parse(localStorage.getItem('arrayPreu2'));
   arrayImatge2 = JSON.parse(localStorage.getItem('arrayImatge2'));
 
+  arrayTitol3 = JSON.parse(localStorage.getItem('arrayTitol3'));
+  arrayPreu3= JSON.parse(localStorage.getItem('arrayPreu3'));
+  arrayImatge3 = JSON.parse(localStorage.getItem('arrayImatge3'));
+
+  arrayTitol4 = JSON.parse(localStorage.getItem('arrayTitol4'));
+  arrayPreu4= JSON.parse(localStorage.getItem('arrayPreu4'));
+  arrayImatge4 = JSON.parse(localStorage.getItem('arrayImatge4'));
+
   let shoppingCartItemsContainer = document.querySelector('.shoppingCartItemsContainer')
 
   const elementsTitleHombre = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitleHombre')
   const elementsTitleMujer = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitleMujer')
   const elementsTitleCalzado = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitleCalzado')
+  const elementsTitleNiño = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitleNiño')
+  const elementsTitleAccesorios = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitleAccesorios')
 
   hol:
   for (i = 0; i < 100; i++){
@@ -56,44 +66,44 @@ window.onload = function addItemToShoppingCart(){
       shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
     }
   }
-  
-  hul:
-  for (i = 0; i < 100; i++){
-    if (arrayImatge1[i] != null) {
-      for (let j = 0; j < elementsTitleMujer.length; j++) {
-        if(arrayTitol1[i] == arrayTitol1[j] && arrayTitol1[i] != undefined){
-          let elementQuantity = elementsTitleMujer[j].parentElement.parentElement.querySelector('.shoppingCartItemQuantity')
-          elementQuantity.value++
-          continue hul
-        }
-      }
+
+   hul:
+   for (i = 0; i < 100; i++){
+     if (arrayImatge1[i] != null) {
+       for (let j = 0; j < elementsTitleMujer.length; j++) {
+         if(arrayTitol1[i] == arrayTitol1[j] && arrayTitol1[i] != undefined){
+           let elementQuantity = elementsTitleMujer[j].parentElement.parentElement.querySelector('.shoppingCartItemQuantity')
+           elementQuantity.value++
+           continue hul
+         }
+       }
     
-      const shoppingCartRow = document.createElement('div')
-      const shoppingCartContent = `
-      <div class="shoppingCartItem">
-        <div><br><br><br>
-          <img class="producte" src=${arrayImatge1[i]}><br><br>
-          <h4 class="shoppingCartItemTitleMujer">${arrayTitol1[i]}</h4>
-        </div>
+       const shoppingCartRow = document.createElement('div')
+       const shoppingCartContent = `
+       <div class="shoppingCartItem">
+         <div><br><br><br>
+           <img class="producte" src=${arrayImatge1[i]}><br><br>
+           <h4 class="shoppingCartItemTitleMujer">${arrayTitol1[i]}</h4>
+         </div>
       
-        <div>
-          <h4 id="preu" class="shoppingCartItemPrice">${arrayPreu1[i]}</h4>
-        </div>
+         <div>
+           <h4 id="preu" class="shoppingCartItemPrice">${arrayPreu1[i]}</h4>
+         </div>
 
-        <div>
-          <input type="number" class="sumaCantitat shoppingCartItemQuantity shoppingCart" id="cantitat" value="1"></input>
-          <button class="boto buttonDelete">X</button>
-        </div>
-      </div>
-    `
-    shoppingCartRow.innerHTML = shoppingCartContent
-    shoppingCartItemsContainer.append(shoppingCartRow)
+         <div>
+           <input type="number" class="sumaCantitat shoppingCartItemQuantity shoppingCart" id="cantitat" value="1"></input>
+           <button class="boto buttonDelete">X</button>
+         </div>
+       </div>
+     `
+     shoppingCartRow.innerHTML = shoppingCartContent
+     shoppingCartItemsContainer.append(shoppingCartRow)
 
-    updateShoppingCartTotal()
-    shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem)
-    shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
-    }
-  }
+     updateShoppingCartTotal()
+     shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem)
+     shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
+     }
+   }
 
   hil:
   for (i = 0; i < 100; i++){
@@ -132,7 +142,90 @@ window.onload = function addItemToShoppingCart(){
     shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
     }
   }
-  
+
+ niño:
+  for (i = 0; i < 100; i++){
+    if (arrayImatge3[i] != null) {
+      for (let j = 0; j < elementsTitleNiño.length; j++) {
+        if(arrayTitol3[i] == arrayTitol3[j] && arrayTitol3[i] != undefined){
+          let elementQuantity = elementsTitleNiño[j].parentElement.parentElement.querySelector('.shoppingCartItemQuantity')
+          elementQuantity.value++
+          continue niño
+        }
+      }
+      
+      const shoppingCartRow = document.createElement('div')
+      const shoppingCartContent = `
+        <div class="shoppingCartItem">
+          <div><br><br><br>
+            <img class="producte" src=${arrayImatge3[i]}><br><br>
+            <h4 class="shoppingCartItemTitleNiño">${arrayTitol3[i]}</h4>
+          </div>
+      
+          <div>
+            <h4 id="preu" class="shoppingCartItemPrice">${arrayPreu3[i]}</h4>
+          </div>
+
+          <div>
+            <input type="number" class="sumaCantitat shoppingCartItemQuantity shoppingCart" value="1"></input>
+            <button class="boto buttonDelete">X</button>
+          </div>
+        </div>
+      `
+      shoppingCartRow.innerHTML = shoppingCartContent
+      shoppingCartItemsContainer.append(shoppingCartRow)
+
+      shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem)
+
+      updateShoppingCartTotal()
+
+      shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
+    }
+  }
+
+  accesorios:
+  for (i = 0; i < 100; i++){
+    if (arrayImatge4[i] != null) {
+      for (let j = 0; j < elementsTitleAccesorios.length; j++) {
+        if(arrayTitol4[i] == arrayTitol4[j] && arrayTitol4[i] != undefined){
+          let elementQuantity = elementsTitleAccesorios[j].parentElement.parentElement.querySelector('.shoppingCartItemQuantity')
+          elementQuantity.value++
+          continue accesorios
+        }
+      }
+      
+      const shoppingCartRow = document.createElement('div')
+      const shoppingCartContent = `
+        <div class="shoppingCartItem">
+          <div><br><br><br>
+            <img class="producte" src=${arrayImatge4[i]}><br><br>
+            <h4 class="shoppingCartItemTitleAccesorios">${arrayTitol4[i]}</h4>
+          </div>
+      
+          <div>
+            <h4 id="preu" class="shoppingCartItemPrice">${arrayPreu4[i]}</h4>
+          </div>
+
+          <div>
+            <input type="number" class="sumaCantitat shoppingCartItemQuantity shoppingCart" value="1"></input>
+            <button class="boto buttonDelete">X</button>
+          </div>
+        </div>
+      `
+      shoppingCartRow.innerHTML = shoppingCartContent
+      shoppingCartItemsContainer.append(shoppingCartRow)
+
+      shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem)
+
+      updateShoppingCartTotal()
+
+      shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
+    }
+  }
+  let longitud = arrayImatge.length + arrayImatge1.length + arrayImatge2.length + arrayImatge3.length + arrayImatge4.length
+  let pipo = document.getElementById("itemsTotal")
+  pipo.innerHTML = longitud
+
   function updateShoppingCartTotal (){
     let total = 0
     const shoppingCartTotal = document.querySelector('.shoppingCartTotal')
@@ -144,6 +237,7 @@ window.onload = function addItemToShoppingCart(){
       const shoppingCartItemQuantityElement = shoppingCartItem.querySelector('.shoppingCartItemQuantity')
       const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value)
       total = total + shoppingCartItemPrice * shoppingCartItemQuantity
+      localStorage.setItem('total', JSON.stringify(total));
     })
     shoppingCartTotal.innerHTML = `${total}€`
   }
@@ -152,6 +246,8 @@ window.onload = function addItemToShoppingCart(){
     const buttonClicked = e.target
     buttonClicked.closest('.shoppingCartItem').remove()
     updateShoppingCartTotal()
+    longitud = longitud - 1
+    pipo.innerHTML = longitud
   }
   
   function quantityChanged(e){
@@ -159,4 +255,12 @@ window.onload = function addItemToShoppingCart(){
     if (input.value <= 0) input.value = 1
     updateShoppingCartTotal()
   };
+  localStorage.setItem('longitud', JSON.stringify(longitud));
+}
+
+let btn = document.getElementById("reiniciar")
+
+btn.onclick = function limpiarCarrito() {
+  localStorage.clear()
+  location.reload()
 }

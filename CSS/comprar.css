@@ -1,41 +1,101 @@
-.comprar {
-    height: 750px;
-    margin-top: -100px;
+/*Principal*/
+*{
+    outline: none;
+    
+}
+.compra {
+    height: max-content;
+    margin-bottom: 50px;
 }
 
-form label {
-    margin-right: 70px;
-    font-weight: 500;
-}
-
-form {
-    position: relative;
-    width: 35%;
-    line-height: 30px;
-    text-align: left;
+.compra-maxim {
+    width: 50%;
     margin: 0 auto;
 }
-
-form span { 
-    color: #43d5b0;
+ 
+.primer {
+     background-color: black;
+     height: 50px;
+     margin: 0 auto;
+     text-align: left;
+     color: white;
 }
+ 
+.primer p {
+    display: inline-block;
+    padding: 15px 0 0 20px;
+}
+
+.primer #editar, #editar1 {
+    color: #fff;
+    margin-left: 400px;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    text-decoration: underline;
+    cursor: pointer;
+    display: none;
+}
+
+.primer #editar1 {
+    margin-left: 428px;
+}
+
+.primer #datosEnvio, #pagamiento{
+    margin-left: 10px;
+    color: white;
+}
+
+#tick, #tick1{
+    color: green;
+    display: none;
+}
+
+input {
+    text-indent: 10px;
+}
+
+#contenido, #contenido1, #contenido2 {
+    text-align: left;
+    padding-left: 10px;
+    border: 1px gray solid;
+}
+
+/*contenido*/
+
 
 #input {
     height: 34px;
-    width: 100%;
+    width: 45%;
     margin-bottom: 20px;
+}
+
+#input:invalid{
+    color:red;
+}
+
+#localitat{
+    height: 34px;
+    width: 29%;
+    margin-bottom: 20px;
+    
+}
+
+#contenido .direccion {
+    width: 93%;
 }
 
 ::placeholder {
     font-weight: normal;
-    padding-left: 10px;
+    
 }
 
 #enviar {
-    width: 100%;
-    height: 50px;
+    width: 30%;
+    padding: 10px;
+    margin: 10px 15px;
     background-color: #43d5b0;
     border: 0;
+    border-radius: 3px;
     font-size: 18px;
     color: white;
     transition: 0.7s all ease;
@@ -44,4 +104,263 @@ form span {
 
 #enviar:hover {
     background-color: #1D8DEA;
+}
+
+/*contenido1*/
+
+.codigo {
+    margin: -30px 0 10px 0;
+}
+
+#aplicarDescuento input {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 70%;
+    outline-color: red;
+}
+
+#aplicarDescuento p {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.codiDescompte {
+    display: inline-block;
+    width: 80%;
+}
+
+.codiDescompte button {
+    margin-left: 10px;
+    padding: 8px 20px;
+    background-color:#43d5b0 ;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    transition: 0.7s all ease;
+    cursor: pointer;
+}
+
+.codiDescompte button:hover {
+    background-color: #1D8DEA;;
+}
+
+#error, #error1 {
+    color: red;
+}
+
+#primerCodi {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#conseguirCodi{
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.6s all ease;
+    font-weight: normal;
+}
+
+#conseguirCodi:hover {
+    background: #B1362C;
+    color: white;
+}
+
+#tuCodigo{
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    display: none;
+}
+
+.metodoPago {
+    margin: 10px 0 10px 0;
+    font-weight: 300;
+}
+
+.metodoPago p {
+    margin-bottom: 10px;
+}
+
+.tarja{
+    margin-left: 30px;
+}
+
+.reembolso {
+    margin-left: 163px;
+}
+
+.titolss {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.data {
+    position: relative;
+    left: 223px;
+}
+
+.code {
+    position: relative;
+    left: 243px;
+}
+
+#numTarjeta{
+    height: 34px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+#codiSegur{
+    height: 34px;
+    width: 20%;
+    margin-bottom: 20px;
+    
+}
+
+#confirm-pago {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #43d5b0;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    transition: 0.7s all ease;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#confirm-pago:hover {
+    background-color: #1D8DEA;
+}
+
+#contenido1 #regalo {
+    display: block;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 40%;
+    
+}
+
+#contenido1 img {
+    position: relative;
+    left: 300px;
+    bottom: 90px;
+    height: 100px;
+}
+
+#errorCodigo, #errorPin {
+    color: red;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#enviarCodi {
+    width: 40%;
+    padding: 10px;
+    background-color: #43d5b0;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    transition: 0.7s all ease;
+    cursor: pointer;
+    position: relative;
+    right: 150px;
+    bottom: 50px;
+    border-radius: 3px;
+}
+
+#enviarCodi:hover {
+    background-color: #1D8DEA;
+}
+
+#paypal p{
+    font-weight: normal;
+}
+
+#paypal #anarPaypal {
+    position: relative;
+    left: 370px;
+    bottom: 20px;
+    width: 40%;
+    padding: 10px;
+    background-color: #43d5b0;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    transition: 0.7s all ease;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#paypal #anarPaypal:hover {
+    background-color: #1D8DEA;
+}
+
+#paypal #anarPaypal a{
+    text-decoration: none;
+    color: white;
+}
+
+#reembolso p{
+    font-weight: normal;
+}
+
+#reembolso .revisarCompra {
+    position: relative;
+    left: 370px;
+    bottom: 20px;
+    width: 40%;
+    padding: 10px;
+    background-color: #43d5b0;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    transition: 0.7s all ease;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#reembolso .revisarCompra:hover {
+    background-color: #1D8DEA;
+}
+
+#productes {
+    font-weight: normal;
+    line-height: 30px;
+    margin-left: 30px;
+}
+
+#contenido2 img {
+    height: 100px;
+    width: 100px;
+    margin-left: -30px;
+    display: inline-block;
+}
+
+#productes p {
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    bottom: 32px;
+    left: 12px;
+}
+
+.preuTotal {
+    text-decoration: line-through;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+#itemsTotal {
+    position: relative;
+    top: 15px;
+    right: 32px;
+    font-size: 13.5px;
+    font-weight: normal;
+    color: white;
 }

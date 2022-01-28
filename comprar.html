@@ -3,7 +3,7 @@
 	  <head>
 		<title> Projecte Final </title>
 		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="viewport" >
         <link rel="stylesheet" type="text/css" href="CSS/principal.css">
         <link rel="stylesheet" type="text/css" href="CSS/comprar.css">
         <link rel="shortcut icon" href="blue.png">
@@ -46,6 +46,7 @@
             <li><a href="accesorios.html">Accesorios</a></li>
             <li style="margin-left: 270px;"><a href="iniciSessio.html"><svg class="responsiveAccountHeader_accountIcon" width="24px" height="24px" viewBox="0 0 24 24"><path d="M12,10.5 C13.6568542,10.5 15,9.15685425 15,7.5 C15,5.84314575 13.6568542,4.5 12,4.5 C10.3431458,4.5 9,5.84314575 9,7.5 C9,9.15685425 10.3431458,10.5 12,10.5 Z M12,12.5 C9.23857625,12.5 7,10.2614237 7,7.5 C7,4.73857625 9.23857625,2.5 12,2.5 C14.7614237,2.5 17,4.73857625 17,7.5 C17,10.2614237 14.7614237,12.5 12,12.5 Z M5,21.5 L3,21.5 C3,17.6340068 7.02943725,14.5 12,14.5 C16.9705627,14.5 21,17.6340068 21,21.5 L19,21.5 C19,18.8641562 15.9603707,16.5 12,16.5 C8.03962935,16.5 5,18.8641562 5,21.5 Z"/></svg></a></li>
             <li><a href="cesta.html"><svg width="24px" height="24px" viewBox="0 0 24 24"><path d="M16 7a1 1 0 0 1-1-1V3H9v3a1 1 0 0 1-2 0V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1z"></path><path d="M20 5H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2zm0 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h16z"></path></svg></li></a>
+            <li id="itemsTotal"></li>
           </ul>
         </div>
 
@@ -71,19 +72,126 @@
         </div>
       </div>
 
-        <div class="comprar">
-            <form> <br><br>
-                <h3>Formulario de atención al cliente</h3>
-                <label>Nombre completo <span>*</span></label> <input type="text" id="input" required>
-                <label>Dirección e-mail <span>*</span></label> <input type="email" placeholder="porejemplo@ejemplo.com" id="input" required>
-                <label>Asunto <span>*</span></label> <input type="text" id="input" required>
-                <label>Descripción <span>*</span></label> <input type="text" id="input" style="height: 100px;" required>
-                <label>Número de pedido</label> <input type="text" pattern="[0-9]" id="input" >
-                <label>Número de producto</label> <input type="text" pattern="[0-9]" id="input" >
-                <input id="enviar" type="submit" class="submit" value="Comprar">
-            </form>
-        </div>
+      <div class="compra">
+        <div class="compra-maxim">
+          <div class="primer">
+            <p><span id="tick">&#10004;</span> <span id="datosEnvio">1. DATOS DE ENVIO</span></p>
+            <p id="editar">Edit</p>
+          </div>
 
+          <form id="contenido" style="display: block;"> <br>
+            <input type="text" id="input" placeholder="Nombre" required>
+            <input type="text" id="input" placeholder="Apellido" required>
+            <input type="text" id="input" class="direccion" placeholder="Dirección" required>
+            <input type="text" id="localitat" placeholder="Provincia" required>
+            <input type="text" id="localitat" placeholder="Ciudad" required>
+            <input type="text" id="localitat" placeholder="Codigo postal" required>
+            <input type="email" id="input" placeholder="Email" required>
+            <input type="text" id="input" placeholder="Número de telefono" required>
+            <input type="submit" id="enviar" value="Enviar y guardar">
+          </form> 
+        </div>
+        <br>
+
+        <div class="compra-maxim">
+          <div class="primer">
+            <p><span id="tick1">&#10004;</span> <span id="pagamiento">2. PAGAMIENTO</span></p>
+            <p id="editar1">Edit</p>
+          </div>
+          
+          <form id="contenido1" style="display: none;"> <br><br>
+            <div class="codigo">
+              <input type="checkbox" id="descuento"> Tienes un código de descuento o un código promocional?<br><br>
+              
+              <div id="aplicarDescuento" style="display: none;" >
+                <p>Código de descuento</p>
+                <div class="codiDescompte">
+                  <input type="text" id="inputCodi">
+                  <button  id="anarPaypal">Aplicar</button>
+                  <p id="error"></p><br>
+                </div>
+
+                <p>Código promocional</p>
+                <div class="codiDescompte">
+                  <input type="text">
+                  <button  id="anarPaypal1">Aplicar</button>
+                  <p id="error1"></p>
+                </div>
+              </div>
+              <p id="primerCodi">Quieres conseguir tu primer código de descuento?</p>
+              <button id="conseguirCodi">Conseguir código</button>
+              <p id="tuCodigo">Tu código de descuento es <b>9842</b></p>
+            </div>
+
+            <div class="metodoPago">
+              <hr><br>
+              <p>Selecciona un método de pagamento</p>
+              <input type="radio" id="tarjetaCredito"> Tarjeta de crédito / débito
+              <input type="radio" class="tarja" id="tarjetaRegalo"> Tarjeta Regalo<br><br>
+              <input type="radio" id="obrirPaypal"> PayPal
+              <input type="radio" class="reembolso" id="botoReembolso"> Pago a contrareembolso
+            </div>
+
+            <div id="bancaria" style="display: none;"><br>  
+              <hr><br>
+              <p>Añadir tarjeta</p><br>
+              <div>
+                <p class="titolss">Múmero de tarjeta</p>
+                <p class="titolss data">Data de expiración</p>
+                <p class="titolss code">Codigo de seguridad</p>
+              </div>
+          
+              <div>
+                <input type="text" id="numTarjeta" required>
+                <p id="errorTarjeta"></p>
+                <input type="text" id="codiSegur" placeholder="MM/YY" required>
+                <input type="text" id="codiSegur" placeholder="XXX" required>
+              </div>
+              <input type="submit" id="confirm-pago" class="revisarCompra" value="Revisar compra">
+            </div>
+            
+            <div class="regalo" id="tarjetRegalo" style="display: none;"><br><br>
+              <hr><br>
+              <p>Por favor, introduce los datos de la tarjeta de regalo</p><br>
+              <input type="text" id="regalo" placeholder="Código de la tarjeta de regalo">
+              <p id="errorCodigo"></p>
+              <input type="text" id="regalo" placeholder="PIN">
+              <p id="errorPin"></p>
+              <img src="images/principal/cartaRegalo.png">
+              <input type="button" value="Aplicar" id="enviarCodi">
+            </div>
+
+            <div id="paypal" style="display: none;">
+              <hr><br>
+              <p>Paga cómoda y facilmente con tu cuenta PayPal. Si todavía no tienes una cuenta PayPal, puedes en todo momento crear una.</p><br>
+              <p><b>Serás redireccionado a la web de PayPal</b></p>
+              <button id="anarPaypal"><a href="https://www.paypal.com/cgibin/webscr?cmd=_express-checkout&token=EC-9D544390VS451923L">Redireccionar</a></button>
+            </div>
+
+            <div id="reembolso" style="display: none;">
+              <hr><br>
+              <p><b>Deberá realizar el pago una vez llegue el pedido a su casa</b></p><br>
+              <p>Continue con el proceso</p>
+              <input type="button" class="revisarCompra" value="Revisar compra">
+            </div>
+          </form> 
+        </div>
+        <br>
+        <div class="compra-maxim" >
+          <div class="primer">
+            <p>3. REVISAR COMPRA</p>
+          </div>
+
+          <form id="contenido2" style="display: none;" ><br>
+            <p>Tu cesta</p><br>
+            <div id="productes"></div><br>
+            <p style="font-weight: normal;">Precio total:</p>
+            <p id="preuTotal"></p>
+            <p id="preuDescompte"></p>
+            <input type="submit" id="confirm-pago" value="Confirmar pago" >
+        </div>
+      </div>
+      
       <div class="footer1">
         <div class="ampladaMaxima">
           <div class="social">
@@ -155,6 +263,7 @@
         <p id="pago">Aceptamos las siguientes formas de pago</p>
         <img id="visa" src="pago.png">
       </div>
-
+	  <script src="JS/compra.js"></script>
+    <script src="JS/comprar.js"></script>
     </body>
   </html>

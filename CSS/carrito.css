@@ -88,3 +88,13 @@ bottom:47px;
 
 
 }
+
+#reiniciar{
+  background-color:aqua;
+  padding:15px;
+  position:absolute;
+  right:200px;
+  border:0;
+
+
+}
