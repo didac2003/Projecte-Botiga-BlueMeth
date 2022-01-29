@@ -85,8 +85,8 @@ function obrirDescompte(){
 
   //Verificar codis descompte
 
-let botoAplicar = document.getElementById("anarPaypal")
-let botoAplicar1 = document.getElementById("anarPaypal1")
+let botoAplicar = document.getElementById("aplicar")
+let botoAplicar1 = document.getElementById("aplicar1")
 let inputCodi = document.getElementById("inputCodi")
 let textError = document.getElementById("error")
 
@@ -95,16 +95,22 @@ botoAplicar.addEventListener('click', error)
 function error(){
   Number(inputCodi.value)
   if(inputCodi.value  == 9842) {
+      botoAplicar.className = "hol"
       textError.innerHTML = "Has aplicado correctamente el código de descuento<br>Se te aplicará un <b>10%</b> de descuento a tu compra"
       textError.style.color = "green"
+      
       dividirPreu()
   }
-  else textError.innerHTML = "El codigo introducido no es válido"
+  else {
+    botoAplicar.className = "hol"
+    textError.innerHTML = "El codigo introducido no es válido"
+  }
 }
 
 botoAplicar1.addEventListener('click', error1)
 
 function error1(){
+  botoAplicar1.className = "hol"
   let textError1 = document.getElementById("error1")
   textError1.innerHTML = "El codigo introducido no es válido"
 }
@@ -229,6 +235,10 @@ function dividirPreu(){
 
 preuTotal.innerHTML = total + ",00€"
 
+items = JSON.parse(localStorage.getItem('items'));
+let itemsTotal = document.getElementById("itemsTotal")
+itemsTotal.innerHTML=items
+
 arrayImatge = JSON.parse(localStorage.getItem('arrayImatge'));
 arrayTitol = JSON.parse(localStorage.getItem('arrayTitol'));
 arrayPreu = JSON.parse(localStorage.getItem('arrayPreu'));
@@ -271,7 +281,9 @@ for (i = 0; i < arrayTitol4.length; i++){
   productes.innerHTML += `<img src=${arrayImatge4[i]}><p>${arrayTitol4[i]} ========== <b>${arrayPreu4[i]}</b></p><br>`
 }
 
-longitud = JSON.parse(localStorage.getItem('longitud'));
-let itemsTotal = document.getElementById("itemsTotal")
-itemsTotal.innerHTML=longitud
+// longitud = JSON.parse(localStorage.getItem('longitud'));
+// let itemsTotal = document.getElementById("itemsTotal")
+// itemsTotal.innerHTML=longitud
+
+
     

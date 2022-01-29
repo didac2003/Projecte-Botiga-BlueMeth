@@ -39,37 +39,48 @@
           <ul class="nav">
             <li><a href="oferta.html" id="rebajas">REBAJAS</a></li>
             <li><a href="cataleg.html">Inicio</a></li>
+            <li ><a href="ropahombre.html">Ropa</a>
+              <ul>
+                <li><a href="ropahombre.html">Hombre</a></li>
+                <li><a href="ropamujer.html">Mujer</a></li>
+                <li><a href="niñoropa.html">Niño</a></li>
+              </ul>
+            </li>
+    
             <li><a href="hombre.html">Hombre</a></li>
             <li><a href="mujer.html">Mujer</a></li>
             <li><a href="niño.html">Niño</a></li>
             <li><a href="calzado.html">Calzado</a></li>
             <li><a href="accesorios.html">Accesorios</a></li>
-            <li style="margin-left: 270px;"><a href="iniciSessio.html"><svg class="responsiveAccountHeader_accountIcon" width="24px" height="24px" viewBox="0 0 24 24"><path d="M12,10.5 C13.6568542,10.5 15,9.15685425 15,7.5 C15,5.84314575 13.6568542,4.5 12,4.5 C10.3431458,4.5 9,5.84314575 9,7.5 C9,9.15685425 10.3431458,10.5 12,10.5 Z M12,12.5 C9.23857625,12.5 7,10.2614237 7,7.5 C7,4.73857625 9.23857625,2.5 12,2.5 C14.7614237,2.5 17,4.73857625 17,7.5 C17,10.2614237 14.7614237,12.5 12,12.5 Z M5,21.5 L3,21.5 C3,17.6340068 7.02943725,14.5 12,14.5 C16.9705627,14.5 21,17.6340068 21,21.5 L19,21.5 C19,18.8641562 15.9603707,16.5 12,16.5 C8.03962935,16.5 5,18.8641562 5,21.5 Z"/></svg></a></li>
+            <li style="margin-left: 210px;"><a href="iniciSessio.html"><svg class="responsiveAccountHeader_accountIcon" width="24px" height="24px" viewBox="0 0 24 24"><path d="M12,10.5 C13.6568542,10.5 15,9.15685425 15,7.5 C15,5.84314575 13.6568542,4.5 12,4.5 C10.3431458,4.5 9,5.84314575 9,7.5 C9,9.15685425 10.3431458,10.5 12,10.5 Z M12,12.5 C9.23857625,12.5 7,10.2614237 7,7.5 C7,4.73857625 9.23857625,2.5 12,2.5 C14.7614237,2.5 17,4.73857625 17,7.5 C17,10.2614237 14.7614237,12.5 12,12.5 Z M5,21.5 L3,21.5 C3,17.6340068 7.02943725,14.5 12,14.5 C16.9705627,14.5 21,17.6340068 21,21.5 L19,21.5 C19,18.8641562 15.9603707,16.5 12,16.5 C8.03962935,16.5 5,18.8641562 5,21.5 Z"/></svg></a></li>
             <li><a href="cesta.html"><svg width="24px" height="24px" viewBox="0 0 24 24"><path d="M16 7a1 1 0 0 1-1-1V3H9v3a1 1 0 0 1-2 0V3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3a1 1 0 0 1-1 1z"></path><path d="M20 5H4a2 2 0 0 0-2 2v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2zm0 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h16z"></path></svg></li></a>
+            <li id="itemsTotal"></li>
           </ul>
         </div>
+      </div>
 
         <div class="principal2">
           <p class="barra" id="barra">OFERTAS BLACK FRIDAY</p>
           <p class="barra" id="barra1" >ULTIMAS NOVEDADES A MEJOR PRECIO</p>
           <p class="barra" id="barra2" >ENVIOS EN 24H GRATIS DURANTE ESTA SEMANA</p>  
         </div>
-        
-        <div class="inicio">
-          <button onclick="tornarAdalt()">Volver al inicio</button>
 
-        <script>
-          function tornarAdalt() {
-            var body = $("html, body");
-            body.stop().animate({
-              scrollTop:0
-            }, 500, 'swing', function() { 
-              document.documentElement.scrollTop = 0;
-            })
-          }
-          </script>
+        <div class="fixBoto">
+          <div class="inicio">
+            <button onclick="tornarAdalt()">Volver al inicio</button>
+
+          <script>
+            function tornarAdalt() {
+              var body = $("html, body");
+              body.stop().animate({
+                scrollTop:0
+              }, 500, 'swing', function() { 
+                document.documentElement.scrollTop = 0;
+              })
+            }
+            </script>
+          </div>
         </div>
-      </div>
 
       <div class="links">
         <a href="cataleg.html"><p>Página principal <span>&#10095;</span></p></a>
@@ -140,7 +151,7 @@
           </div>
           <div class="productItem item" category="adidas">
             <img class="item-image" src="images/hombre/ropa/marcas/adidas3.jpg" onmouseover="this.src='images/hombre/ropa/marcas/adidas3.3.jpg';" onmouseout="this.src='images/hombre/ropa/marcas/adidas3.jpg';">
-            <a href="#" class="item-title">adidas Scotland FA Condivo21 Training Top</a>
+            <a href="#" class="item-title">adidas Scotland FA Condivo21 Training</a>
             <p class="item-price">75.00€</p>
 
             <button class="addToCart">Añadir al carrito</button>
@@ -157,7 +168,7 @@
           </div>
           <div class="productItem item" category="nike">
             <img class="item-image" src="images/hombre/ropa/marcas/nike2.jpg" onmouseover="this.src='images/hombre/ropa/marcas/nike2.2.jpg';" onmouseout="this.src='images/hombre/ropa/marcas/nike2.jpg';">
-            <a href="#" class="item-title">Nike pantalón de chándal Academy Essential</a>
+            <a href="#" class="item-title">Nike pantalón de chándal Academy</a>
             <p class="item-price">40.00€</p>
 
             <button class="addToCart">Añadir al carrito</button>
@@ -454,5 +465,11 @@
         <img id="visa" src="pago.png">
       </div>
       <script src="JS/carrito/cestaHombre.js"></script>
+      <script>
+        items = JSON.parse(localStorage.getItem('items'));
+        let itemsTotal = document.getElementById("itemsTotal")
+        itemsTotal.innerHTML=items
+        console.log(items)
+      </script>
     </body>
   </html>

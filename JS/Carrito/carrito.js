@@ -27,8 +27,8 @@ window.onload = function addItemToShoppingCart(){
   const elementsTitleNiño = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitleNiño')
   const elementsTitleAccesorios = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitleAccesorios')
 
-  let items=0
-  localStorage.setItem('items', JSON.stringify(items));
+  let items = 0
+  
   hol:
   for (i = 0; i < 100; i++){
     if (arrayImatge[i] != null) {
@@ -66,7 +66,7 @@ window.onload = function addItemToShoppingCart(){
       updateShoppingCartTotal()
 
       shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
-      items+= arrayTitol.length
+      items += 1
       actualitzarPreus()
     }
   }
@@ -106,7 +106,7 @@ window.onload = function addItemToShoppingCart(){
      updateShoppingCartTotal()
      shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem)
      shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
-     items+= arrayTitol1.length
+     items += 1
      actualitzarPreus()
      }
    }
@@ -146,7 +146,7 @@ window.onload = function addItemToShoppingCart(){
     updateShoppingCartTotal()
     shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem)
     shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
-    items+= arrayTitol2.length
+    items += 1
      actualitzarPreus()
     }
   }
@@ -188,7 +188,7 @@ window.onload = function addItemToShoppingCart(){
       updateShoppingCartTotal()
 
       shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
-      items+= arrayTitol3.length
+      items += 1
       actualitzarPreus()
     }
   }
@@ -230,17 +230,15 @@ window.onload = function addItemToShoppingCart(){
       updateShoppingCartTotal()
 
       shoppingCartRow.querySelector('.shoppingCart').addEventListener('change', quantityChanged)
-      items+= arrayTitol4.length
+      items += 1
       actualitzarPreus()
     }
   }
-  // let longitud = arrayImatge.length + arrayImatge1.length + arrayImatge2.length + arrayImatge3.length + arrayImatge4.length
-  // let pipo = document.getElementById("itemsTotal")
-  // pipo.innerHTML = longitud
- 
+
   function actualitzarPreus(){
     let pipo = document.getElementById("itemsTotal")
     pipo.innerHTML = items
+    localStorage.setItem('items', JSON.stringify(items));
   }
 
   function updateShoppingCartTotal (){
@@ -265,7 +263,6 @@ window.onload = function addItemToShoppingCart(){
     updateShoppingCartTotal()
     items = items - 1
     actualitzarPreus();
-    pipo.innerHTML = longitud
   }
   
   function quantityChanged(e){
@@ -273,12 +270,10 @@ window.onload = function addItemToShoppingCart(){
     if (input.value <= 0) input.value = 1
     updateShoppingCartTotal()
   };
-  localStorage.setItem('longitud', JSON.stringify(longitud));
 }
 
 let btn = document.getElementById("reiniciar")
 
 btn.onclick = function limpiarCarrito() {
-  localStorage.clear()
   location.reload()
 }

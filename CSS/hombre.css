@@ -129,12 +129,11 @@ form input {
 .container2 img {
   height: 400px;
   width: 400px;
+  transition: .5s all;
 }
 
 .container2 img:hover {
-  transition: 2s ease;
-  -webkit-animation-name:fade;
-  -webkit-animation-duration:10s;
+  height: 380px;
 }
 
 .columnes {
