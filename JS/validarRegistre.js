@@ -3,8 +3,8 @@ let namee = localStorage.getItem('nomPerson');
 let correu= localStorage.getItem('correuPerson')
 
 boto.addEventListener("click", (e) => {
-  if (namee== "" ) {
-    alert("registrate antes de comprar!")
+  if (namee == null ) {
+    alert("Debes registrarte antes de comprar!")
     window.location.href="registre.html"
   } 
   else window.location.href="comprar.html"

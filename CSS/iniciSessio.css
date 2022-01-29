@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +9,11 @@
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
 }
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
@@ -35,11 +36,11 @@ body {
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  font: 400 12px/16px;
 }
 
 #contact {
-  background:#F9F9F9;
+  background: linear-gradient(to bottom, white, blue);
   padding: 25px;
   margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -50,13 +51,15 @@ body {
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 #contact h4 {
   margin: 5px 0 15px;
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
+  font-weight: bold;
 }
 
 fieldset {
@@ -100,20 +103,19 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #2b06cf;
-  color: #FFF;
+  background: white;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
-  transition: background-color 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
 }
 
 #contact button[type="submit"]:hover {
-  background: red;
+  background: black;
+  color: white;
   
-  -webkit-transition: background 0.5s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
+  
 }
 
 #contact button[type="submit"]:active {
@@ -169,4 +171,14 @@ a{
   text-decoration: underline;
   color: black;
   font-size: 14px;
+  font-weight: bold;
+}
+
+#registrar:hover {
+  font-size: 15px;
+}
+
+#part {
+  color: black;
+  font-weight: bold;
 }
