@@ -275,5 +275,6 @@ window.onload = function addItemToShoppingCart(){
 let btn = document.getElementById("reiniciar")
 
 btn.onclick = function limpiarCarrito() {
+  localStorage.clear()
   location.reload()
 }

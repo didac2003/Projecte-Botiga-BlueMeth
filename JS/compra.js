@@ -6,6 +6,8 @@ $(document).on('submit', '#contenido', function() {
 
 //Obrir els forms
 
+let papapa = document.getElementById("input")
+
 var primerForm = document.getElementById('contenido');
 var segonForm = document.getElementById('contenido1');
 var tercerForm = document.getElementById('contenido2');
@@ -35,6 +37,40 @@ function obrirSegonForm(){
       botoEditar.style.display = "inline-block"
       tick.style.display = "inline-block"
   }
+}
+
+let diaMes = document.querySelector(".diaMes")
+let codiTarjeta = document.querySelector(".codiTarjeta")
+let revisar = document.getElementById("confirm-pago")
+let errorDia = document.getElementById("validarDia")
+
+revisar.addEventListener('click', validarNumeros)
+revisar.addEventListener('click', validarTarjeta)
+
+function validarNumeros(){
+  let inputsTarjeta = document.querySelectorAll(".inputTarjet")
+  var valoresAceptados = /[0-9]/
+  inputsTarjeta.forEach((tecles) => {
+    if(tecles.value.match(valoresAceptados)) console.log("bondia");
+  })
+}
+
+function validarTarjeta(){
+  let valorDiaMes = diaMes.value
+  let valorCodiTarjeta = codiTarjeta.value
+  var valoresAceptados = /[0-9]*3/
+  let cont = 0;
+  if (valorDiaMes.length < 3 || !valorDiaMes[2].includes("/") || valorDiaMes.length > 5) {
+    errorDia.innerHTML = "El format és incorrecte"
+  }
+  if (!valorCodiTarjeta.match(valoresAceptados)){
+    validarCodiTarjeta.innerHTML = "El format és incorrecte"
+  }
+
+  if (valorCodiTarjeta.match(valoresAceptados))validarCodiTarjeta.innerHTML = ""
+  if (!(valorDiaMes.length < 3 || !valorDiaMes[2].includes("/") || valorDiaMes.length > 5))errorDia.innerHTML = ""
+    
+  else if(!(valorDiaMes.length < 3 || !valorDiaMes[2].includes("/") || valorDiaMes.length > 5) && valorCodiTarjeta.match(valoresAceptados)) obrirTercerForm()
 }
 
 let tick1 = document.getElementById("tick1")
@@ -148,6 +184,7 @@ function obrirTarjetaCredito(){
   botoAnarPaypal.checked = false
   botoTarjetaRegalo.checked = false
 }
+
 
   //Obrir tarjeta regal
 

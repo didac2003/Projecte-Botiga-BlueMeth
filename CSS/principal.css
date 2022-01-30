@@ -71,19 +71,18 @@ body {
 .fixBoto{
   position: sticky;
   top:100px;
-  z-index: 500;
+  z-index: 500; 
 }
 
 #hol{
-  width: 300px;
+  width: 250px;
   height: 40px;
   float:right;
-  background-image: url('../aa.png');
-  background-size: 16px;
-  background-repeat: no-repeat;
-  background-position: right;
+ 
   display: block;
   border: 0;
+  outline: none;
+  text-indent: 10px;
 } 
 
 #boto{

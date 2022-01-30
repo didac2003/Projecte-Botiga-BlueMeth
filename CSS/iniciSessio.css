@@ -14,20 +14,24 @@
 }
 
 body {
-  font-weight: 100;
+  
   font-size: 12px;
   line-height: 30px;
-  color: #777;
   background-image: url(../images/tiendaRoparrak.jpeg);
   background-repeat: no-repeat;
   background-size:100%;
+  text-align: center;
 }
 
 .container {
-  max-width: 400px;
+  max-width: 380px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.container img {
+  height: 80px;
 }
 
 #contact input[type="text"],
@@ -48,7 +52,7 @@ body {
 
 #contact h3 {
   display: block;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 300;
   margin-bottom: 10px;
   font-weight: bold;
@@ -57,7 +61,7 @@ body {
 #contact h4 {
   margin: 5px 0 15px;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   font-weight: bold;
 }
@@ -101,13 +105,13 @@ fieldset {
 
 #contact button[type="submit"] {
   cursor: pointer;
-  width: 100%;
+  width: 70%;
   border: none;
   background: white;
-  margin: 0 0 5px;
+  margin: 10px 0;
   padding: 10px;
   font-size: 15px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ;
   font-weight: bold;
 }
 
@@ -176,6 +180,8 @@ a{
 
 #registrar:hover {
   font-size: 15px;
+  color: wheat;
+  font-weight: normal;
 }
 
 #part {

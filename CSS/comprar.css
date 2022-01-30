@@ -55,18 +55,18 @@ input[type="text"], input[type="email"] {
 }
 
 .compra input{
-    font-weight: normal;
+    font-weight: bold;
     transition: background, .3s;
     border: 1px solid black;
 }
 
 .compra input:focus {
-    background-color: gray;
-    color: white;
+    background-color: #CDCCCC;
+    
 }
 
 .compra input:focus::placeholder {
-    color: white;
+    color: black;
 }
 
 #contenido, #contenido1, #contenido2 {
@@ -76,7 +76,6 @@ input[type="text"], input[type="email"] {
 }
 
 /*contenido*/
-
 
 #input {
     height: 34px;
@@ -248,14 +247,30 @@ input[type="text"], input[type="email"] {
 #numTarjeta{
     height: 34px;
     width: 50%;
-    margin-bottom: 20px;
+}
+
+#validarDia{
+    position: absolute;
+    right: 535px;
+    color: red;
+    font-size: 13px;
+}
+
+#validarCodiTarjeta{
+    position: absolute;
+    right: 390px;
+    color: red;
+    font-size: 13px;
+}
+
+#bancaria > b{
+    font-weight: normal;
 }
 
 #codiSegur{
     height: 34px;
     width: 20%;
-    margin-bottom: 20px;
-    
+    margin-bottom: 7px;
 }
 
 #confirm-pago {

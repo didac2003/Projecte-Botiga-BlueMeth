@@ -109,7 +109,7 @@
             <p id="editar1">Edit</p>
           </div>
           
-          <form id="contenido1" style="display: none;"> <br><br>
+          <form id="contenido1" style="display: block;"> <br><br>
             <div class="codigo">
               <input type="checkbox" id="descuento"> Tienes un código de descuento o un código promocional?<br><br>
               
@@ -142,22 +142,26 @@
               <input type="radio" class="reembolso" id="botoReembolso"> Pago a contrareembolso
             </div>
 
-            <div id="bancaria" style="display: none;"><br>  
+            <div id="bancaria" style="display: block;"><br>  
               <hr><br>
               <p>Añadir tarjeta</p><br>
-              <div>
+              
                 <p class="titolss">Múmero de tarjeta</p>
                 <p class="titolss data">Data de expiración</p>
                 <p class="titolss code">Codigo de seguridad</p>
-              </div>
+
           
-              <div>
-                <input type="text" id="numTarjeta" required>
-                <input type="text" id="codiSegur" placeholder="MM/YY" required>
-                <input type="text" id="codiSegur" placeholder="XXX" required>
+             
+                <input type="text" id="numTarjeta" class="inputTarjet" placeholder="XXXX XXXX XXXX XXXX" required>
+                <input type="text" id="codiSegur" class="diaMes inputTarjet" placeholder="MM/YY" required>
+                <input type="text" id="codiSegur" class="codiTarjeta inputTarjet" placeholder="XXX" required><br>
+                <b>hola</b>
+                <b id="validarDia"></b>
+                <b id="validarCodiTarjeta"></b><br>
+                <input type="checkbox"> Quiere guardar los datos de la tarjeta?<br>
+                <input type="button" id="confirm-pago"  value="Revisar compra">
               </div>
-              <input type="submit" id="confirm-pago" class="revisarCompra" value="Revisar compra">
-            </div>
+              
             
             <div class="regalo" id="tarjetRegalo" style="display: none;"><br><br>
               <hr><br>

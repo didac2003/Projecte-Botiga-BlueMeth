@@ -34,26 +34,18 @@ function obrirPagina(){
   window.location.href="comprar.html"
 }
 
-
 function erroor() {
   Swal.fire({
     icon: "error",
-    title: "Carai...",
-    text: "usuario o correo incorrectos!",
+    title: "Carai!",
+    text: "Los datos no coinciden!",
   });
 }
-
-
-
-
 
 function success() {
   Swal.fire({
     icon: "success",
-    title: "Perfecto!...",
-    text: "has iniciado sessión!",
+    title: "Perfecto!",
+    text: "Has iniciado sesión!",
   });
 }
-
-
-
