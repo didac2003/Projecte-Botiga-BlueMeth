@@ -44,7 +44,7 @@ body {
 }
 
 #contact {
-  background: linear-gradient(to bottom, white, blue);
+  background: white;
   padding: 25px;
   margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -54,7 +54,7 @@ body {
   display: block;
   font-size: 27px;
   font-weight: 300;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-weight: bold;
 }
 
@@ -107,8 +107,10 @@ fieldset {
   cursor: pointer;
   width: 70%;
   border: none;
-  background: white;
-  margin: 10px 0;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
   padding: 10px;
   font-size: 15px;
   transition: all 0.4s ;
@@ -116,8 +118,8 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background: black;
-  color: white;
+  background: blue;
+ 
   
   
 }
@@ -175,13 +177,13 @@ a{
   text-decoration: underline;
   color: black;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: bold;  
+  letter-spacing: 1.3px;
 }
 
 #registrar:hover {
   font-size: 15px;
-  color: wheat;
-  font-weight: normal;
+  
 }
 
 #part {

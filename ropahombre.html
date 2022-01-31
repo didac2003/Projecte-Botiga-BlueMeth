@@ -112,8 +112,10 @@
           <input type="checkbox" class="category_item botoFiltre" category="pantalon"><p class="titols">Pantalones</p>
           
         </div>
-
+        
         <div class="container">
+          <input type="search" id="buscar">
+          
             <h1>Ropa de hombre | Estilo deportivo, urbano y streetwear</h1>
         </div>
 
@@ -135,7 +137,7 @@
           
             <div class="productItem item" category="adidas">
               <img class="item-image" src="images/hombre/ropa/marcas/adidas1.jpg" onmouseover="this.src='images/hombre/ropa/marcas/adidas1.1.jpg';" onmouseout="this.src='images/hombre/ropa/marcas/adidas1.jpg';">
-              <a href="#" class="item-title">adidas Tech Reflect T-Shirt</a>
+              <a href="#" class="item-title">adidas tech reflect t-shirt</a>
               <p class="item-price">35.00€</p>
 
               <button class="addToCart">Añadir al carrito</button>
@@ -143,7 +145,7 @@
           </div>
           <div class="productItem item" category="adidas">
             <img class="item-image" src="images/hombre/ropa/marcas/adidas2.jpg" onmouseover="this.src='images/hombre/ropa/marcas/adidas2.2.jpg';" onmouseout="this.src='images/hombre/ropa/marcas/adidas2.jpg';">
-            <a href="#" class="item-title">adidas chándal Match Knit</a>
+            <a href="#" class="item-title">adidas chandal match knit</a>
             <p class="item-price">70.00€</p>
 
             <button class="addToCart">Añadir al carrito</button>
@@ -465,7 +467,7 @@
         <img id="visa" src="pago.png">
       </div>
       <script src="JS/carrito/cestaHombre.js"></script>
-      <!-- <script src="JS/carrito/newCarrito.js"></script> -->
+      <script src="JS/busca.js"></script>
       <script>
         items = JSON.parse(localStorage.getItem('items'));
         let itemsTotal = document.getElementById("itemsTotal")
