@@ -6,6 +6,7 @@
 .compra {
     height: max-content;
     margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 .compra-maxim {
@@ -76,6 +77,13 @@ input[type="text"], input[type="email"] {
 }
 
 /*contenido*/
+#contenido input {
+    margin-top: 8px;
+}
+
+#contenido b {
+    font-weight: normal;
+}
 
 #input {
     height: 34px;
@@ -87,7 +95,7 @@ input[type="text"], input[type="email"] {
     height: 34px;
     width: 29%;
     margin-bottom: 20px;
-    
+    margin-top: 10px;
 }
 
 #contenido .direccion {
@@ -96,7 +104,52 @@ input[type="text"], input[type="email"] {
 
 ::placeholder {
     font-weight: normal;
-    
+}
+
+#nomDades {
+    color: red;
+    font-size: 12px;
+   position: relative;
+   bottom: 20px;
+}
+
+#apellidoDades {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    right: 566px;
+    margin-top: -17px;
+}
+
+#direccionDades, #provinciaDades, #emailDades {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    margin-top: -17px;
+}
+
+#ciutatDades {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    right: 670px;
+    margin-top: -17px;
+}
+
+#codiDades{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    right: 475px;
+    margin-top: -17px;
+}
+
+#numeroDades {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    right: 566px;
+    margin-top: -17px;
 }
 
 #enviar {
@@ -146,7 +199,7 @@ input[type="text"], input[type="email"] {
     border: 0;
     border-radius: 3px;
     color: white;
-    transition: 0.6s all ease;
+    transition: 0.17s all ease;
     cursor: pointer;
 }
 
@@ -251,16 +304,28 @@ input[type="text"], input[type="email"] {
 
 #validarDia{
     position: absolute;
-    right: 535px;
+    right: 527px;
     color: red;
     font-size: 13px;
 }
 
 #validarCodiTarjeta{
     position: absolute;
-    right: 390px;
+    right: 380px;
     color: red;
     font-size: 13px;
+}
+
+#validarNumTarjeta{
+    color: red;
+    font-size: 13px;
+    position: relative;
+    bottom: 5px;
+}
+
+#registrarTarjeta{
+    color: green;
+    font-weight: normal;
 }
 
 #bancaria > b{
@@ -397,7 +462,7 @@ input[type="text"], input[type="email"] {
     width: 90px;
     margin-left: -30px;
     display: inline-block;
-    transition: all .4s ease;
+    transition: all .3s ease;
 }
 
 #contenido2 img:hover {
@@ -405,11 +470,16 @@ input[type="text"], input[type="email"] {
     width: 200px;
 }
 
+#contenido2 hr {
+    margin: 10px 0;
+    width: 35%;
+}
+
 #productes p {
     display: inline-block;
     font-weight: normal;
     position: relative;
-    bottom: 32px;
+    bottom: 40px;
     left: 12px;
 }
 
@@ -417,4 +487,9 @@ input[type="text"], input[type="email"] {
     text-decoration: line-through;
     font-weight: normal;
     font-size: 13px;
+}
+
+.preuDescompte span {
+    margin-left: 6px;
+    color: red;
 }

@@ -64,23 +64,7 @@
           <p class="barra" id="barra1" >ULTIMAS NOVEDADES A MEJOR PRECIO</p>
           <p class="barra" id="barra2" >ENVIOS EN 24H GRATIS DURANTE ESTA SEMANA</p>  
         </div>
-
-        <div class="fixBoto">
-          <div class="inicio">
-            <button onclick="tornarAdalt()">Volver al inicio</button>
-
-          <script>
-            function tornarAdalt() {
-              var body = $("html, body");
-              body.stop().animate({
-                scrollTop:0
-              }, 500, 'swing', function() { 
-                document.documentElement.scrollTop = 0;
-              })
-            }
-            </script>
-          </div>
-        </div>
+      </div>
 
       <div class="compra">
         <div class="compra-maxim">
@@ -90,15 +74,23 @@
           </div>
 
           <form id="contenido" style="display: block;" autocomplete="off"> <br>
-            <input type="text" id="input" placeholder="Nombre" required>
-            <input type="text" id="input" placeholder="Apellido" required>
-            <input type="text" id="input" class="direccion" placeholder="Dirección" required>
-            <input type="text" id="localitat" placeholder="Provincia" required>
-            <input type="text" id="localitat" placeholder="Ciudad" required>
-            <input type="text" id="localitat" placeholder="Codigo postal" required>
-            <input type="email" id="input" placeholder="Email" required>
-            <input type="text" id="input" placeholder="Número de telefono" required>
-            <input type="submit" id="enviar" value="Enviar y guardar">
+            <input type="text" id="input" class="soloLetras" placeholder="Nombre" required>
+            <input type="text" id="input" class="soloLetras" placeholder="Apellido" required><br>
+            <b id="nomDades"></b>
+            <b id="apellidoDades"></b>
+            <input type="text" id="input" class="direccion soloLetras" placeholder="Dirección" required><br>
+            <b id="direccionDades"></b>
+            <input type="text" id="localitat" class="soloLetras" placeholder="Provincia" required>
+            <input type="text" id="localitat" class="soloLetras" placeholder="Ciudad" required>
+            <input type="text" id="localitat" class="soloLetras" placeholder="Codigo postal" required><br>
+            <b id="provinciaDades"></b>
+            <b id="ciutatDades"></b>
+            <b id="codiDades"></b>
+            <input type="email" id="input" class="soloLetras" placeholder="Email" required>
+            <input type="text" id="input" class="soloLetras" placeholder="Número de telefono" required><br>
+            <b id="emailDades"></b>
+            <b id="numeroDades"></b>
+            <input type="button" id="enviar" value="Enviar y guardar">
           </form> 
         </div>
         <br>
@@ -109,7 +101,7 @@
             <p id="editar1">Edit</p>
           </div>
           
-          <form id="contenido1" style="display: block;"> <br><br>
+          <form id="contenido1" style="display: none;"> <br><br>
             <div class="codigo">
               <input type="checkbox" id="descuento"> Tienes un código de descuento o un código promocional?<br><br>
               
@@ -142,23 +134,23 @@
               <input type="radio" class="reembolso" id="botoReembolso"> Pago a contrareembolso
             </div>
 
-            <div id="bancaria" style="display: block;"><br>  
+            <div id="bancaria" style="display: none;"><br>  
               <hr><br>
               <p>Añadir tarjeta</p><br>
               
                 <p class="titolss">Múmero de tarjeta</p>
                 <p class="titolss data">Data de expiración</p>
                 <p class="titolss code">Codigo de seguridad</p>
-
-          
              
-                <input type="text" id="numTarjeta" class="inputTarjet" placeholder="XXXX XXXX XXXX XXXX" required>
+                <br><input type="text" id="numTarjeta" class="inputTarjet" placeholder="XXXX XXXX XXXX XXXX" required>
                 <input type="text" id="codiSegur" class="diaMes inputTarjet" placeholder="MM/YY" required>
                 <input type="text" id="codiSegur" class="codiTarjeta inputTarjet" placeholder="XXX" required><br>
-                <b>hola</b>
+                <b id="validarNumTarjeta"></b>
                 <b id="validarDia"></b>
-                <b id="validarCodiTarjeta"></b><br>
-                <input type="checkbox"> Quiere guardar los datos de la tarjeta?<br>
+                <b id="validarCodiTarjeta"></b>
+                <br><input type="checkbox" id="registrarDatosTarjeta"><b id="guardarDatos"> Quiere guardar los datos de la tarjeta?</b>
+                <p id="registrarTarjeta" style="display: none;">Los datos se registrarán correctamente</p>
+                <br>
                 <input type="button" id="confirm-pago"  value="Revisar compra">
               </div>
               
@@ -200,6 +192,7 @@
             <p style="font-weight: normal;">Precio total:</p>
             <p id="preuTotal"></p>
             <p id="preuDescompte"></p>
+            <hr>
             <a href="finalizarCompra.html"><input type="button" id="confirm-pago" value="Confirmar pago"></a>
           </form>
         </div>

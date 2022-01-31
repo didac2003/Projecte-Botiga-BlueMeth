@@ -31,7 +31,7 @@ function validar() {
 validar();
 
 function obrirPagina(){
-  window.location.href="comprar.html"
+  window.location.href="finalizarRegistro.html"
 }
 
 function erroor() {

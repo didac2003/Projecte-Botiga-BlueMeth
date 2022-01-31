@@ -90,12 +90,17 @@ body {
   float:right;
   background-color: #43d5b0;
   color: #fff;
-  transition: color .3s,background-color .3s,border-color .3s,opacity .3s;
+  transition: all 0.5s;
   height: 40px;
   margin-right: 80px;
   display: block;
   cursor: pointer;
-  border: 0
+  border: 0;
+  font-weight: normal;
+}
+
+#boto:hover {
+  background-color: #0B67CE;
 }
 
 .principal {
@@ -128,6 +133,7 @@ ul, ol {
 svg {
   color: white;
   transition: all .5s;
+  cursor: pointer;
 }
 
 svg:hover{
@@ -218,6 +224,7 @@ svg:hover{
   text-align: left;
   color: white;
   margin-bottom: 40px;
+
 }
 
 .ampladaMaxima {
@@ -232,6 +239,7 @@ svg:hover{
 }
 
 .social h3 {
+  font-weight: normal;
   font-size: 15px;
 }
 
@@ -294,6 +302,10 @@ svg:hover{
   padding: 30px;
 }
 
+.col p{
+  font-weight: normal;
+}
+
 .tarjeta {
   padding-top: 10px; 
   padding-bottom: 70px;
@@ -320,6 +332,7 @@ svg:hover{
   text-decoration: none;
   color: white;
   font-size: 14px;
+  font-weight: normal;
 }
 
 .footer2 a:hover {
@@ -412,8 +425,4 @@ svg:hover{
 
 svg {
   fill: white;
-}
-
-#contacto{
-  
 }

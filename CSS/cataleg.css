@@ -93,10 +93,11 @@ a {
   width: 110%;
   height: 500px;
   transition: .5s all;
+  box-shadow: -5px 5px 15px black;
 }
 
 .imagen:hover{
-  height: 95%;
+  height: 98%;
 }
 
 .categoriaPrincipal {
