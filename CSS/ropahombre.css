@@ -3,10 +3,9 @@
   height: 30px;
 }
   
-.container h1{
-  text-align: left;
-  padding-left: 3.5%;
-  margin-left: 250px;
+.container > h2{
+  font-size: 1px;
+  
 }
 
 .container2{
@@ -88,7 +87,7 @@ hr{
 	flex-direction: column;
 	align-items: center;
 	align-self: flex-start;
-	transition: all .4s;
+	transition: all .4s ease;
 }
 
  .productItem img{

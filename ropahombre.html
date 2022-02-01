@@ -93,30 +93,30 @@
         <div class = "categoriaLista">
           <hr id="ralla">
           <b><br><br><p>Marca</p></b><br>
-          <input type="checkbox" class="category_item botoFiltre" category="adidas"><p class="titols">Adidas</p>
-          <input type="checkbox" class="category_item botoFiltre" category="nike"><p class="titols">Nike</p>
-          <input type="checkbox" class="category_item botoFiltre" category="puma"><p class="titols">Puma</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="adidas"><p class="titols">Adidas</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="nike"><p class="titols">Nike</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="puma"><p class="titols">Puma</p>
           <hr>
-          <b><br><br><p>Talla</p></b><br>
-          <input type="checkbox" class="category_item botoFiltre" category="xsmall"><p class="titols">XS</p>
-          <input type="checkbox" class="category_item botoFiltre" category="small"><p class="titols">S</p>
-          <input type="checkbox" class="category_item botoFiltre" category="mid"><p class="titols">M</p>
-          <input type="checkbox" class="category_item botoFiltre" category="large"><p class="titols">L</p>
-          <input type="checkbox" class="category_item botoFiltre" category="xlarge"><p class="titols">XL</p>
-          <hr>
-          <b><br><br><p>Tipo</p></b><br>
-          <input type="checkbox" class="category_item botoFiltre" category="conjunto"><p class="titols">Conjuntos</p>
-          <input type="checkbox" class="category_item botoFiltre" category="sudadera"><p class="titols">Sudaderas</p>
-          <input type="checkbox" class="category_item botoFiltre" category="chaqueta"><p class="titols">Chaquetas</p>
-          <input type="checkbox" class="category_item botoFiltre" category="camiseta"><p class="titols">Camisetas</p>
-          <input type="checkbox" class="category_item botoFiltre" category="pantalon"><p class="titols">Pantalones</p>
-          
+          <div id="amagar">
+            <b><br><br><p>Talla</p></b><br>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="xsmall"><p class="titols">XS</p>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="small"><p class="titols">S</p>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="mid"><p class="titols">M</p>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="large"><p class="titols">L</p>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="xlarge"><p class="titols">XL</p>
+            <hr>
+            <b><br><br><p>Tipo</p></b><br>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="conjunto"><p class="titols">Conjuntos</p>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="sudadera"><p class="titols">Sudaderas</p>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="chaqueta"><p class="titols">Chaquetas</p>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="camiseta"><p class="titols">Camisetas</p>
+            <input type="checkbox" class="category_item botoFiltre checkFiltre" category="pantalon"><p class="titols">Pantalones</p>
+          </div>
         </div>
         
         <div class="container">
-          <input type="search" id="buscar">
-          
-            <h1>Ropa de hombre | Estilo deportivo, urbano y streetwear</h1>
+          <h2>Ropa de hombre | Estilo deportivo, urbano y streetwear</h2>
+          <input type="text" id="buscar" placeholder="Filtrar productos">
         </div>
 
         <div class="container2">
@@ -132,9 +132,10 @@
             <button class="category_item botoFiltre" category="xsmall">TOP VENTAS HOMBRE</button>
           </div>
         </div>
+        
+        <p style="display: none;" id="ningun"></p>
 
         <section class="products-list">
-          
             <div class="productItem item" category="adidas">
               <img class="item-image" src="images/hombre/ropa/marcas/adidas1.jpg" onmouseover="this.src='images/hombre/ropa/marcas/adidas1.1.jpg';" onmouseout="this.src='images/hombre/ropa/marcas/adidas1.jpg';">
               <a href="#" class="item-title">adidas tech reflect t-shirt</a>

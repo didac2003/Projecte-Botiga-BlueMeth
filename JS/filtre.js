@@ -54,19 +54,34 @@ $(document).ready(function(){
             else{
                 for (i = 0; i < cont; i++){
                     array[cont] = catProduct;
+                    
                     if (array[cont] == array[i]){
-                        array[cont] = i
-                        array[i] = i
+                        array[cont] = "hol"
+                        array[i] = "hol"
                         break;
                     }
                 }
             }
-            cont++;
             
+            cont++;
+           
             for ( i = 0; i < cont; i++){
                 $('.productItem[category="'+array[i]+'"]').show();
                 $('.productItem[category="'+array[i]+'"]').css('transform', 'scale(1)');
             }
+
+        let botons = document.querySelectorAll(".checkFiltre")
+        let si = 0
+
+        botons.forEach((boto) => {
+                if(!boto.checked == true) si++
+            })
+        if (si == 13){
+            ningun.innerHTML = "Lo sentimos!<br>No se ha encontrado ningún producto"
+            ningun.style.display = "block"
+        } else ningun.style.display = "none"
+        
         } setTimeout(showProduct,400);
     });
+    
 })
