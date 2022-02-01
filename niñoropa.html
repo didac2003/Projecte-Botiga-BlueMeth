@@ -90,27 +90,29 @@
 
       <h3 id="hombre">Niño - Ropa (150)</h3>
         <div class = "categoriaLista">
+          <hr id="ralla">
           <b><br><br><p>Marca</p></b><br><br>
-          <input type="checkbox" class="category_item botoFiltre" category="adidas"><p class="titols">Adidas</p>
-          <input type="checkbox" class="category_item botoFiltre" category="nike"><p class="titols">Nike</p>
-          <input type="checkbox" class="category_item botoFiltre" category="puma"><p class="titols">Puma</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="adidas"><p class="titols">Adidas</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="nike"><p class="titols">Nike</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="puma"><p class="titols">Puma</p>
           
-
+          <hr>
           <b><br><br><p>Talla</p></b><br><br>
-          <input type="checkbox" class="category_item botoFiltre" category="xsmall"><p class="titols">XS</p>
-          <input type="checkbox" class="category_item botoFiltre" category="small"><p class="titols">S</p>
-          <input type="checkbox" class="category_item botoFiltre" category="mid"><p class="titols">M</p>
-          <input type="checkbox" class="category_item botoFiltre" category="large"><p class="titols">L</p>
-          <input type="checkbox" class="category_item botoFiltre" category="xlarge"><p class="titols">XL</p>
-          
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="xsmall"><p class="titols">XS</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="small"><p class="titols">S</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="mid"><p class="titols">M</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="large"><p class="titols">L</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="xlarge"><p class="titols">XL</p>
+          <hr>
           <b><br><br><p>Tipo</p></b><br><br>
-          <input type="checkbox" class="category_item botoFiltre" category="conjunto"><p class="titols">Ropa bebé</p>
-          <input type="checkbox" class="category_item botoFiltre" category="sudadera"><p class="titols">Ropa infantil</p>
-          <input type="checkbox" class="category_item botoFiltre" category="chaqueta"><p class="titols">Ropa juvenil</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="conjunto"><p class="titols">Ropa bebé</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="sudadera"><p class="titols">Ropa infantil</p>
+          <input type="checkbox" class="category_item botoFiltre checkFiltre" category="chaqueta"><p class="titols">Ropa juvenil</p>
         </div>
 
         <div class="container">
-            <h1>Ropa de niño | Estilo deportivo, urbano y streetwear</h1>
+            <h2>Ropa de niño | Estilo deportivo, urbano y streetwear</h2>
+            <input type="text" id="buscar" placeholder="Filtrar productos...">
         </div>
 
         <div class="container2">
@@ -126,6 +128,8 @@
             <button class="category_item botoFiltre" category="xsmall">TOP VENTAS HOMBRE</button>
           </div>
         </div>
+
+        <p style="display: none;" id="ningun"></p>
 
         <section class="products-list">
           <div class="productItem item" category="adidas">
@@ -415,5 +419,6 @@
         let itemsTotal = document.getElementById("itemsTotal")
         itemsTotal.innerHTML=items
       </script>
+      <script src="JS/busca.js"></script>
       </body>
     </html>

@@ -91,25 +91,26 @@
       <div class = "categoriaLista">
         <hr id="ralla">
         <b><br><br><p>Marca</p></b><br>
-        <input type="checkbox" class="category_item botoFiltre" category="adidas"><p class="titols">Adidas</p>
-        <input type="checkbox" class="category_item botoFiltre" category="nike"><p class="titols">Nike</p>
-        <input type="checkbox" class="category_item botoFiltre" category="puma"><p class="titols">Puma</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="adidas"><p class="titols">Adidas</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="nike"><p class="titols">Nike</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="puma"><p class="titols">Puma</p>
         <hr>
         <b><br><br><p>Talla</p></b><br>
-        <input type="checkbox" class="category_item botoFiltre" category="xsmall"><p class="titols">32-34</p>
-        <input type="checkbox" class="category_item botoFiltre" category="small"><p class="titols">35-37</p>
-        <input type="checkbox" class="category_item botoFiltre" category="mid"><p class="titols">38-40</p>
-        <input type="checkbox" class="category_item botoFiltre" category="large"><p class="titols">41-43</p>
-        <input type="checkbox" class="category_item botoFiltre" category="xlarge"><p class="titols">44-46</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="xsmall"><p class="titols">32-34</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="small"><p class="titols">35-37</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="mid"><p class="titols">38-40</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="large"><p class="titols">41-43</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="xlarge"><p class="titols">44-46</p>
         <hr>
         <b><br><br><p>Tipo</p></b><br>
-        <input type="checkbox" class="category_item botoFiltre" category="conjunto"><p class="titols">Hombre</p>
-        <input type="checkbox" class="category_item botoFiltre" category="sudadera"><p class="titols">Mujer</p>
-        <input type="checkbox" class="category_item botoFiltre" category="chaqueta"><p class="titols">Niños</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="conjunto"><p class="titols">Hombre</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="sudadera"><p class="titols">Mujer</p>
+        <input type="checkbox" class="category_item botoFiltre checkFiltre" category="chaqueta"><p class="titols">Niños</p>
       </div>
 
       <div class="container">
-          <h1>Calzado | Estilo deportivo, urbano y streetwear</h1>
+          <h2>Calzado | Estilo deportivo, urbano y streetwear</h2>
+          <input type="text" id="buscar" placeholder="Filtrar productos...">
       </div>
 
       <div class="container2">
@@ -126,8 +127,9 @@
         </div>
       </div>
 
+      <p style="display: none;" id="ningun"></p>
+
       <section class="products-list">
-        
         <div class="productItem item" category="adidas">
             <img class="item-image" src="images/calzado/marcas/adidas1.jpg" onmouseover="this.src='images/calzado/marcas/adidas1.1.jpg';" onmouseout="this.src='images/calzado/marcas/adidas1.jpg';">
             <a href="#" class="item-title">adidas Originals Forum Low</a>
@@ -420,5 +422,6 @@
       itemsTotal.innerHTML=items
       console.log(items)
     </script>
+    <script src="JS/busca.js"></script>
   </body>
 </html>

@@ -42,8 +42,6 @@ function clicBoto(e){
             ningun.style.display = "none"
         }
 
-       
-
         if (paraula == ""){
             let veureTots = document.querySelector(".productItem")
             veureTots.style.display = "flex"
@@ -51,15 +49,12 @@ function clicBoto(e){
         } 
         
         if (titol.textContent.startsWith(paraula)){
-            
-            console.log("aq1");
             let papa = titol.closest('.productItem')
             papa.style.display = "flex"
             ningun.style.display = "none"
             si++
         }
         if (si == 0){
-            console.log("aq");
             let ningun = document.getElementById("ningun")
             ningun.innerHTML = "Lo sentimos!<br>No se ha encontrado ningún producto"
             ningun.style.display = "block"

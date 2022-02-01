@@ -72,14 +72,20 @@ $(document).ready(function(){
 
         let botons = document.querySelectorAll(".checkFiltre")
         let si = 0
+        console.log(botons);
 
         botons.forEach((boto) => {
                 if(!boto.checked == true) si++
-            })
+        })
+
         if (si == 13){
-            ningun.innerHTML = "Lo sentimos!<br>No se ha encontrado ningún producto"
-            ningun.style.display = "block"
-        } else ningun.style.display = "none"
+            $('.productItem').show();
+            $('.productItem').css('transform', 'scale(1)');
+        }
+        else if (si == 11){
+            $('.productItem').show();
+            $('.productItem').css('transform', 'scale(1)');
+        }
         
         } setTimeout(showProduct,400);
     });
